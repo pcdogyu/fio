@@ -1,0 +1,201 @@
+4k
+sap: (g=0): rw=randwrite, bs=(R) 4096B-4096B, (W) 4096B-4096B, (T) 4096B-4096B, ioengine=libaio, iodepth=32
+...
+fio-3.3
+Starting 30 threads
+sap: Laying out IO file (1 file / 30720MiB)
+
+sap: (groupid=0, jobs=30): err= 0: pid=8628: Mon Feb  8 13:50:24 2021
+  write: IOPS=3258, BW=12.7MiB/s (13.3MB/s)(770MiB/60468msec)
+    slat (usec): min=6, max=1913.1k, avg=424.84, stdev=17531.49
+    clat (usec): min=766, max=4753.0k, avg=293482.80, stdev=232824.88
+     lat (usec): min=1671, max=4754.0k, avg=293908.80, stdev=233375.93
+    clat percentiles (msec):
+     |  1.00th=[  134],  5.00th=[  163], 10.00th=[  188], 20.00th=[  201],
+     | 30.00th=[  205], 40.00th=[  211], 50.00th=[  243], 60.00th=[  249],
+     | 70.00th=[  288], 80.00th=[  342], 90.00th=[  405], 95.00th=[  498],
+     | 99.00th=[ 1519], 99.50th=[ 2056], 99.90th=[ 2400], 99.95th=[ 2668],
+     | 99.99th=[ 2735]
+   bw (  KiB/s): min=    8, max=  911, per=3.51%, avg=457.78, stdev=163.80, samples=3449
+   iops        : min=    2, max=  227, avg=114.08, stdev=40.90, samples=3449
+  lat (usec)   : 1000=0.01%
+  lat (msec)   : 2=0.01%, 4=0.01%, 10=0.01%, 20=0.02%, 50=0.11%
+  lat (msec)   : 100=0.36%, 250=61.18%, 500=33.36%, 750=1.80%, 1000=1.14%
+  cpu          : usr=0.07%, sys=0.54%, ctx=131000, majf=0, minf=31
+  IO depths    : 1=0.1%, 2=0.1%, 4=0.1%, 8=0.1%, 16=0.2%, 32=99.5%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.1%, 64=0.0%, >=64=0.0%
+     issued rwts: total=0,197060,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=32
+
+Run status group 0 (all jobs):
+  WRITE: bw=12.7MiB/s (13.3MB/s), 12.7MiB/s-12.7MiB/s (13.3MB/s-13.3MB/s), io=770MiB (807MB), run=60468-60468msec
+
+Disk stats (read/write):
+    md0: ios=0/211911, merge=0/0, ticks=0/0, in_queue=0, util=0.00%, aggrios=65332/65824, aggrmerge=708/3155, aggrticks=2962946/2123381, aggrin_queue=5339204, aggrutil=99.22%
+  sdo: ios=65289/65725, merge=1105/3135, ticks=2986588/2480096, in_queue=5729464, util=91.08%
+  sdk: ios=65629/66128, merge=649/3085, ticks=2911096/1874260, in_queue=5030592, util=98.85%
+  sdq: ios=65090/65621, merge=754/3055, ticks=3031348/1705612, in_queue=4979408, util=99.05%
+  sdc: ios=65019/65537, merge=632/3254, ticks=2805236/1779768, in_queue=4824096, util=99.22%
+  sdr: ios=65700/66188, merge=547/3126, ticks=3045728/2533364, in_queue=5842252, util=91.22%
+  sdp: ios=65266/65745, merge=563/3280, ticks=2997684/2367188, in_queue=5629412, util=91.00%
+8k
+sap: (g=0): rw=randwrite, bs=(R) 8192B-8192B, (W) 8192B-8192B, (T) 8192B-8192B, ioengine=libaio, iodepth=32
+...
+fio-3.3
+Starting 30 threads
+sap: Laying out IO file (1 file / 30720MiB)
+
+sap: (groupid=0, jobs=30): err= 0: pid=10065: Mon Feb  8 13:51:25 2021
+  write: IOPS=3370, BW=26.3MiB/s (27.6MB/s)(1584MiB/60156msec)
+    slat (usec): min=7, max=1568.5k, avg=513.50, stdev=17520.51
+    clat (usec): min=1488, max=4986.4k, avg=284032.73, stdev=230586.53
+     lat (usec): min=1506, max=4986.5k, avg=284547.33, stdev=231185.04
+    clat percentiles (msec):
+     |  1.00th=[  120],  5.00th=[  165], 10.00th=[  186], 20.00th=[  199],
+     | 30.00th=[  205], 40.00th=[  207], 50.00th=[  230], 60.00th=[  247],
+     | 70.00th=[  271], 80.00th=[  326], 90.00th=[  397], 95.00th=[  456],
+     | 99.00th=[ 1653], 99.50th=[ 1838], 99.90th=[ 2467], 99.95th=[ 2534],
+     | 99.99th=[ 3037]
+   bw (  KiB/s): min=   16, max= 1846, per=3.45%, avg=930.22, stdev=340.75, samples=3495
+   iops        : min=    2, max=  230, avg=115.93, stdev=42.56, samples=3495
+  lat (msec)   : 2=0.01%, 4=0.01%, 10=0.02%, 20=0.05%, 50=0.09%
+  lat (msec)   : 100=0.37%, 250=63.91%, 500=31.90%, 750=1.07%, 1000=0.44%
+  cpu          : usr=0.07%, sys=0.64%, ctx=140854, majf=0, minf=30
+  IO depths    : 1=0.1%, 2=0.1%, 4=0.1%, 8=0.1%, 16=0.2%, 32=99.5%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.1%, 64=0.0%, >=64=0.0%
+     issued rwts: total=0,202764,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=32
+
+Run status group 0 (all jobs):
+  WRITE: bw=26.3MiB/s (27.6MB/s), 26.3MiB/s-26.3MiB/s (27.6MB/s-27.6MB/s), io=1584MiB (1661MB), run=60156-60156msec
+
+Disk stats (read/write):
+    md0: ios=0/216897, merge=0/0, ticks=0/0, in_queue=0, util=0.00%, aggrios=67374/67985, aggrmerge=67786/70268, aggrticks=2856430/2209580, aggrin_queue=5323882, aggrutil=99.19%
+  sdo: ios=67366/67906, merge=68036/70401, ticks=2852416/2435324, in_queue=5559064, util=92.51%
+  sdk: ios=67437/68079, merge=67730/70561, ticks=2780716/2043696, in_queue=5071940, util=98.89%
+  sdq: ios=67607/68287, merge=67848/70187, ticks=2914124/1940104, in_queue=5103328, util=99.19%
+  sdc: ios=66939/67508, merge=67608/69965, ticks=2600308/1907300, in_queue=4745148, util=98.84%
+  sdr: ios=67493/68080, merge=67442/70264, ticks=2937236/2478792, in_queue=5688708, util=92.62%
+  sdp: ios=67406/68053, merge=68057/70232, ticks=3053780/2452264, in_queue=5775104, util=92.59%
+16k
+sap: (g=0): rw=randwrite, bs=(R) 16.0KiB-16.0KiB, (W) 16.0KiB-16.0KiB, (T) 16.0KiB-16.0KiB, ioengine=libaio, iodepth=32
+...
+fio-3.3
+Starting 30 threads
+sap: Laying out IO file (1 file / 30720MiB)
+
+sap: (groupid=0, jobs=30): err= 0: pid=10474: Mon Feb  8 13:52:26 2021
+  write: IOPS=2954, BW=46.2MiB/s (48.4MB/s)(2775MiB/60124msec)
+    slat (usec): min=9, max=1011.4k, avg=932.24, stdev=16335.65
+    clat (usec): min=1213, max=5354.6k, avg=318672.49, stdev=230648.00
+     lat (usec): min=1238, max=5354.7k, avg=319605.75, stdev=231255.04
+    clat percentiles (msec):
+     |  1.00th=[  155],  5.00th=[  192], 10.00th=[  201], 20.00th=[  207],
+     | 30.00th=[  213], 40.00th=[  251], 50.00th=[  288], 60.00th=[  296],
+     | 70.00th=[  326], 80.00th=[  380], 90.00th=[  439], 95.00th=[  502],
+     | 99.00th=[ 1586], 99.50th=[ 2056], 99.90th=[ 2668], 99.95th=[ 2769],
+     | 99.99th=[ 2903]
+   bw (  KiB/s): min=   32, max= 3569, per=3.50%, avg=1654.05, stdev=546.57, samples=3453
+   iops        : min=    2, max=  223, avg=102.92, stdev=34.20, samples=3453
+  lat (msec)   : 2=0.01%, 4=0.01%, 10=0.02%, 20=0.04%, 50=0.07%
+  lat (msec)   : 100=0.06%, 250=39.69%, 500=55.01%, 750=2.88%, 1000=0.21%
+  cpu          : usr=0.07%, sys=0.67%, ctx=120573, majf=0, minf=31
+  IO depths    : 1=0.1%, 2=0.1%, 4=0.1%, 8=0.1%, 16=0.3%, 32=99.5%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.1%, 64=0.0%, >=64=0.0%
+     issued rwts: total=0,177621,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=32
+
+Run status group 0 (all jobs):
+  WRITE: bw=46.2MiB/s (48.4MB/s), 46.2MiB/s-46.2MiB/s (48.4MB/s-48.4MB/s), io=2775MiB (2910MB), run=60124-60124msec
+
+Disk stats (read/write):
+    md0: ios=0/189255, merge=0/0, ticks=0/0, in_queue=0, util=0.00%, aggrios=58955/59476, aggrmerge=177374/179881, aggrticks=2826949/2370527, aggrin_queue=5430189, aggrutil=99.70%
+  sdo: ios=58779/59263, merge=176583/179512, ticks=2775296/2309676, in_queue=5320572, util=94.52%
+  sdk: ios=58743/59240, merge=176999/179388, ticks=2769556/2380048, in_queue=5377436, util=99.55%
+  sdq: ios=59188/59737, merge=177993/180379, ticks=2941368/2365864, in_queue=5538656, util=99.70%
+  sdc: ios=59074/59584, merge=178064/180589, ticks=2677516/2418188, in_queue=5323232, util=99.70%
+  sdr: ios=58867/59402, merge=176879/179306, ticks=2889480/2348696, in_queue=5474820, util=94.58%
+  sdp: ios=59082/59634, merge=177728/180117, ticks=2908480/2400692, in_queue=5546420, util=94.50%
+32k
+sap: (g=0): rw=randwrite, bs=(R) 32.0KiB-32.0KiB, (W) 32.0KiB-32.0KiB, (T) 32.0KiB-32.0KiB, ioengine=libaio, iodepth=32
+...
+fio-3.3
+Starting 30 threads
+sap: Laying out IO file (1 file / 30720MiB)
+
+sap: (groupid=0, jobs=30): err= 0: pid=11006: Mon Feb  8 13:53:28 2021
+  write: IOPS=1536, BW=48.0MiB/s (50.3MB/s)(2926MiB/60962msec)
+    slat (usec): min=13, max=1722.7k, avg=2621.91, stdev=26059.66
+    clat (usec): min=664, max=7795.9k, avg=620620.70, stdev=338010.30
+     lat (usec): min=741, max=7795.0k, avg=623243.59, stdev=339034.87
+    clat percentiles (msec):
+     |  1.00th=[  230],  5.00th=[  347], 10.00th=[  372], 20.00th=[  439],
+     | 30.00th=[  481], 40.00th=[  502], 50.00th=[  542], 60.00th=[  592],
+     | 70.00th=[  676], 80.00th=[  718], 90.00th=[  852], 95.00th=[ 1099],
+     | 99.00th=[ 2022], 99.50th=[ 2299], 99.90th=[ 3842], 99.95th=[ 4044],
+     | 99.99th=[ 5067]
+   bw (  KiB/s): min=   61, max= 4793, per=3.56%, avg=1750.36, stdev=702.62, samples=3414
+   iops        : min=    1, max=  149, avg=54.37, stdev=21.90, samples=3414
+  lat (usec)   : 750=0.01%
+  lat (msec)   : 4=0.01%, 10=0.02%, 20=0.01%, 50=0.04%, 100=0.27%
+  lat (msec)   : 250=1.00%, 500=38.12%, 750=44.70%, 1000=9.53%
+  cpu          : usr=0.04%, sys=0.50%, ctx=58062, majf=0, minf=30
+  IO depths    : 1=0.1%, 2=0.1%, 4=0.1%, 8=0.3%, 16=0.5%, 32=99.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.1%, 64=0.0%, >=64=0.0%
+     issued rwts: total=0,93647,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=32
+
+Run status group 0 (all jobs):
+  WRITE: bw=48.0MiB/s (50.3MB/s), 48.0MiB/s-48.0MiB/s (50.3MB/s-50.3MB/s), io=2926MiB (3069MB), run=60962-60962msec
+
+Disk stats (read/write):
+    md0: ios=0/100679, merge=0/0, ticks=0/0, in_queue=0, util=0.00%, aggrios=31087/31322, aggrmerge=217983/219875, aggrticks=3161514/2259223, aggrin_queue=5544350, aggrutil=99.54%
+  sdo: ios=31206/31431, merge=219102/220915, ticks=3098296/2568228, in_queue=5791272, util=92.19%
+  sdk: ios=31160/31383, merge=218710/220457, ticks=3193056/1994120, in_queue=5310008, util=99.49%
+  sdq: ios=31062/31312, merge=217511/219347, ticks=3286628/2009032, in_queue=5418676, util=98.95%
+  sdc: ios=30842/31065, merge=216264/218403, ticks=3080300/1861404, in_queue=5062300, util=99.54%
+  sdr: ios=31186/31430, merge=218351/220303, ticks=3228676/2612764, in_queue=5966888, util=92.50%
+  sdp: ios=31069/31311, merge=217964/219828, ticks=3082128/2509792, in_queue=5716960, util=92.13%
+128k
+sap: (g=0): rw=randwrite, bs=(R) 128KiB-128KiB, (W) 128KiB-128KiB, (T) 128KiB-128KiB, ioengine=libaio, iodepth=32
+...
+fio-3.3
+Starting 30 threads
+sap: Laying out IO file (1 file / 30720MiB)
+
+sap: (groupid=0, jobs=30): err= 0: pid=11411: Mon Feb  8 13:54:30 2021
+  write: IOPS=394, BW=49.3MiB/s (51.7MB/s)(2988MiB/60557msec)
+    slat (usec): min=27, max=3187.5k, avg=56781.46, stdev=294356.36
+    clat (msec): min=201, max=40407, avg=2350.35, stdev=987.52
+     lat (msec): min=201, max=40407, avg=2407.13, stdev=1025.94
+    clat percentiles (msec):
+     |  1.00th=[  676],  5.00th=[ 1133], 10.00th=[ 1401], 20.00th=[ 1703],
+     | 30.00th=[ 1888], 40.00th=[ 2072], 50.00th=[ 2232], 60.00th=[ 2433],
+     | 70.00th=[ 2601], 80.00th=[ 2903], 90.00th=[ 3507], 95.00th=[ 3977],
+     | 99.00th=[ 5134], 99.50th=[ 5470], 99.90th=[ 6208], 99.95th=[ 7080],
+     | 99.99th=[17113]
+   bw (  KiB/s): min=  255, max= 9309, per=7.57%, avg=3827.26, stdev=3493.50, samples=1548
+   iops        : min=    1, max=   72, avg=29.69, stdev=27.11, samples=1548
+  lat (msec)   : 250=0.02%, 500=0.36%, 750=1.02%, 1000=2.36%
+  cpu          : usr=0.02%, sys=0.28%, ctx=56986, majf=0, minf=31
+  IO depths    : 1=0.1%, 2=0.3%, 4=0.5%, 8=1.0%, 16=2.0%, 32=96.1%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=99.9%, 8=0.0%, 16=0.0%, 32=0.1%, 64=0.0%, >=64=0.0%
+     issued rwts: total=0,23905,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=32
+
+Run status group 0 (all jobs):
+  WRITE: bw=49.3MiB/s (51.7MB/s), 49.3MiB/s-49.3MiB/s (51.7MB/s-51.7MB/s), io=2988MiB (3133MB), run=60557-60557msec
+
+Disk stats (read/write):
+    md0: ios=0/25273, merge=0/0, ticks=0/0, in_queue=0, util=0.00%, aggrios=7953/8013, aggrmerge=245566/246916, aggrticks=3202894/2281885, aggrin_queue=3074457344907946957, aggrutil=99.67%
+  sdo: ios=7851/7912, merge=242226/243374, ticks=2877188/2709064, in_queue=5617732, util=94.42%
+  sdk: ios=7969/8011, merge=246028/247145, ticks=3344104/1674056, in_queue=5049092, util=98.86%
+  sdq: ios=8029/8095, merge=248008/249133, ticks=3276880/1677376, in_queue=4985492, util=99.67%
+  sdc: ios=7865/7919, merge=242924/244213, ticks=3206788/1569616, in_queue=4807304, util=99.49%
+  sdr: ios=8010/8077, merge=246993/249129, ticks=3226908/3066264, in_queue=6325424, util=94.26%
+  sdp: ios=7997/8064, merge=247219/248504, ticks=3285496/2994936, in_queue=18446744069420896700, util=94.31%
