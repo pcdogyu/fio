@@ -1,0 +1,1550 @@
+# Logfile created on 2021-02-10 07:31:54 +0000 by logger.rb/61378
+[2021-02-10T07:31:54+00:00] INFO: *** Chef 14.8.12 ***
+[2021-02-10T07:31:54+00:00] INFO: Platform: x86_64-linux
+[2021-02-10T07:31:54+00:00] INFO: Chef-client pid: 2487
+[2021-02-10T07:31:54+00:00] INFO: The plugin path /etc/chef/ohai/plugins does not exist. Skipping...
+[2021-02-10T07:32:01+00:00] INFO: Client key /etc/chef/client.pem is not present - registering
+[2021-02-10T07:32:01+00:00] INFO: Setting the run_list to ["role[lan_azr0201_sfh]", "role[_s4h-vm-init_customer]"] from CLI options
+[2021-02-10T07:32:01+00:00] INFO: Run List is [role[lan_azr0201_sfh], role[_s4h-vm-init_customer]]
+[2021-02-10T07:32:01+00:00] INFO: Run List expands to [s4h_server::s4h_base]
+[2021-02-10T07:32:01+00:00] INFO: Starting Chef Run for azr02v002968
+[2021-02-10T07:32:01+00:00] INFO: Running start handlers
+[2021-02-10T07:32:01+00:00] INFO: Start handlers complete.
+[2021-02-10T07:32:02+00:00] INFO: Error while reporting run start to Data Collector. URL: https://10.238.210.132:443/organizations/s4h/data-collector Exception: 404 -- 404 "Not Found"  (This is normal if you do not have Chef Automate)
+[2021-02-10T07:32:02+00:00] INFO: Loading cookbooks [nsswitch@1.1.11, initrd@1.1.21, zypper@1.6.1, auth@1.5.48, bootloader@1.3.1, ohai@5.2.0, sysctl@0.7.0, kernel@1.1.5, log@1.2.13, resolver@1.3.3, mta@1.2.4, ntp@1.2.2, profile@0.0.8, sysstat@1.2.1, tty@1.1.1, cron@1.7.6, lvm@3.1.3, sap@1.4.6, storage-helpers@0.1.3, public_cloud@0.1.3, awsfixes@0.3.6, swap@0.1.7, cc_s4h_server@0.5.88, s4h_server@0.1.54]
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/nsswitch/chefignore in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/nsswitch/.foodcritic in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/nsswitch/CHANGELOG.md in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/nsswitch/.rspec in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/nsswitch/recipes/default.rb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/nsswitch/README.md in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/nsswitch/templates/etc_nsswitch.conf.erb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/nsswitch/Jenkinsfile in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/nsswitch/recipes/nsswitch.conf.rb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/nsswitch/attributes/default.rb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/nsswitch/Gemfile in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/nsswitch/metadata.rb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/nsswitch/.gitignore in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/initrd/attributes/default.rb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/initrd/recipes/default.rb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/nsswitch/.kitchen.yml in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/nsswitch/.env in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/initrd/templates/etc_dracut.conf.d_01-dist.conf.erb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/initrd/recipes/initrd.rb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/nsswitch/Rakefile in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/initrd/templates/etc_dracut.conf.d_01-dist.conf.xen_host.erb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/initrd/CHANGELOG.md in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/initrd/.rspec in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/initrd/chefignore in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/nsswitch/.rubocop.yml in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/initrd/README.md in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/initrd/Jenkinsfile in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/initrd/templates/etc_modprobe.d_50-hvm-xen.conf.erb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/initrd/templates/etc_dracut.conf.d_99-xen-drivers.conf.erb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/initrd/templates/etc_modprobe.d_50-xen.conf.erb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/initrd/Gemfile in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/initrd/.foodcritic in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/initrd/metadata.rb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/initrd/Rakefile in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/initrd/.env in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/zypper/resources/repo.rb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/zypper/recipes/default.rb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/initrd/.gitignore in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/initrd/.rubocop.yml in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/initrd/.kitchen.yml in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/zypper/providers/repo.rb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/zypper/attributes/default.rb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/zypper/templates/default/etc_zypp_zypper_conf.erb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/zypper/recipes/test_gpgcheck.rb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/zypper/.rspec in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/zypper/Jenkinsfile in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/zypper/templates/default/etc_zypp_zypp_conf.erb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/zypper/recipes/test_autorefresh.rb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/zypper/CHANGELOG.md in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/zypper/chefignore in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/zypper/metadata.rb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/zypper/README.md in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/zypper/Gemfile in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/zypper/.foodcritic in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/zypper/LICENSE in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/zypper/.gitignore in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/zypper/Rakefile in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/zypper/.rubocop.yml in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/zypper/.kitchen.yml in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/zypper/.env in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/auth/recipes/pam.rb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/auth/recipes/accessconf.rb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/auth/recipes/ldap_server.rb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/auth/recipes/pam_common.rb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/auth/recipes/limits.rb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/auth/recipes/ssh.rb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/auth/recipes/sshd.rb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/auth/recipes/ldap_client.rb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/auth/recipes/saslauthd.rb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/auth/recipes/default.rb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/auth/templates/default/etc_openldap_schema_ssh.schema.erb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/auth/attributes/default.rb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/auth/templates/default/etc_pam.d_common-password-pc.erb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/auth/templates/default/etc_openldap_schema_sapmc.schema.erb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/auth/templates/default/etc_pam.d_common-account-pc.erb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/auth/templates/default/etc_pam.d_common-auth-pc.erb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/auth/templates/default/etc_openldap_ldap.conf.erb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/auth/templates/default/etc_openldap_slapd.conf.erb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/auth/recipes/sssd.rb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/auth/recipes/sudosh.rb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/auth/templates/default/etc_pam.d_su-l.erb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/auth/templates/default/etc_pam.d_su.erb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/auth/templates/default/etc_security_access_conf.erb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/auth/templates/default/etc_sasl2_slapd.conf.erb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/auth/templates/default/etc_pam.d_sudo.erb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/auth/templates/default/etc_security_limits_conf.erb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/auth/templates/default/etc_saslauthd.conf.erb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/auth/templates/default/etc_ssh_ssh_config.erb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/auth/templates/default/etc_pam.d_common-session-pc.erb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/auth/templates/default/etc_ssh_banner.erb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/auth/templates/default/etc_ssh_sshd_config.erb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/auth/templates/default/etc_sssd_sssd.conf.erb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/auth/templates/default/etc_sysconfig_saslauthd.erb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/auth/templates/default/opt_imal_bin_sap-mkhomedir.sh.erb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/auth/templates/default/var_lib_ldap_DB_CONFIG.erb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/auth/templates/hec/etc_sssd_conf.d_no-sudosh.conf.erb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/auth/templates/psc/c4c_etc_sssd_sssd.conf.erb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/auth/Jenkinsfile in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/auth/templates/hec/etc_sssd_sssd.conf.erb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/auth/.rspec in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/auth/templates/psc/etc_sssd_sssd.conf.erb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/auth/.foodcritic in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/auth/chefignore in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/auth/templates/hec/etc_sudoers.d_log_output.erb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/auth/.gitignore in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/auth/metadata.rb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/auth/Gemfile in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/auth/README.md in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/auth/Rakefile in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/auth/CHANGELOG.md in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/auth/.env in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/auth/.rubocop.yml in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/bootloader/recipes/grub2.rb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/auth/.kitchen.yml in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/bootloader/.rspec in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/bootloader/Jenkinsfile in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/bootloader/recipes/default.rb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/bootloader/attributes/grub2.rb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/bootloader/CHANGELOG.md in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/bootloader/templates/hec/default_grub.erb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/bootloader/README.md in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/bootloader/templates/sysconfig_bootloader.erb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/bootloader/templates/default_grub.erb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/bootloader/.foodcritic in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/bootloader/Gemfile in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/bootloader/metadata.rb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/bootloader/.gitignore in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/bootloader/chefignore in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/bootloader/.kitchen.yml in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/bootloader/Rakefile in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/bootloader/.env in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/ohai/resources/hint.rb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/bootloader/.rubocop.yml in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/ohai/resources/plugin.rb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/ohai/recipes/default.rb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/ohai/libraries/plugin_helpers.rb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/ohai/chefignore in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/ohai/README.md in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/ohai/libraries/matchers.rb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/ohai/.travis.yml in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/ohai/appveyor.yml in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/ohai/.foodcritic in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/ohai/TESTING.md in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/ohai/libraries/hint_helpers.rb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/ohai/metadata.rb in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/ohai/CHANGELOG.md in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/ohai/LICENSE in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/ohai/.gitignore in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/ohai/Gemfile in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/ohai/.kitchen.appveyor.yml in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/ohai/.kitchen.dokken.yml in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/ohai/CONTRIBUTING.md in the cache.
+[2021-02-10T07:32:02+00:00] INFO: Storing updated cookbooks/ohai/Berksfile in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sysctl/recipes/apply.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sysctl/providers/param.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/ohai/.kitchen.yml in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sysctl/resources/param.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sysctl/recipes/default.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sysctl/recipes/service.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sysctl/recipes/ohai_plugin.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sysctl/libraries/matchers.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sysctl/libraries/sysctl.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sysctl/attributes/default.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sysctl/templates/default/procps.init-rhel.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sysctl/CHANGELOG.md in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sysctl/Gemfile.lock in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sysctl/files/default/plugins/sys.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sysctl/Guardfile in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sysctl/README.md in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sysctl/templates/default/sysctl.conf.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sysctl/Rakefile in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sysctl/.gitignore in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sysctl/.rubocop.yml in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sysctl/Berksfile in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sysctl/metadata.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sysctl/CONTRIBUTING.md in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sysctl/chefignore in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sysctl/Gemfile in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sysctl/Berksfile.lock in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sysctl/.travis.yml in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/kernel/recipes/default.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/kernel/CHANGELOG.md in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/kernel/Jenkinsfile in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sysctl/.kitchen.yml in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/kernel/.rspec in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/kernel/attributes/default.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/kernel/templates/modprobe.d_zzz_sunrpc.conf.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/kernel/README.md in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/kernel/chefignore in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/kernel/.foodcritic in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/kernel/Gemfile in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/kernel/.gitignore in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/kernel/metadata.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/kernel/.rubocop.yml in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/kernel/Rakefile in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/kernel/.env in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/log/recipes/itoa.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/log/recipes/journald.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/log/recipes/default.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/log/recipes/logrotate.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/kernel/.kitchen.yml in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/log/attributes/default.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/log/recipes/rsyslog.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/log/templates/default/etc_logrotate_conf.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/log/templates/default/etc_rsyslog_conf.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/log/templates/default/etc_logrotate_d_syslog.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/log/templates/default/etc_rsyslog_d_loggingTemplate_conf.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/log/templates/default/etc_rsyslog_d_ITOA_conf.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/log/templates/default/etc_rsyslog_hec_conf.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/log/.rspec in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/log/CHANGELOG.md in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/log/templates/etc_systemd_journald_conf.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/log/chefignore in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/log/Jenkinsfile in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/log/README.md in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/log/Gemfile in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/log/Rakefile in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/log/.foodcritic in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/log/.rubocop.yml in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/log/metadata.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/resolver/recipes/hostname.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/resolver/recipes/default.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/log/.gitignore in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/log/.env in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/resolver/recipes/hosts.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/log/.kitchen.yml in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/resolver/recipes/nscd.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/resolver/recipes/pdnsd.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/resolver/recipes/resolv.conf.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/resolver/attributes/default.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/resolver/templates/default/etc_dnsmasq_conf.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/resolver/templates/default/etc_hostname.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/resolver/templates/default/etc_hosts.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/resolver/templates/default/etc_resolv.conf.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/resolver/templates/default/etc_sysconfig_pdnsd.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/resolver/CHANGELOG.md in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/resolver/chefignore in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/resolver/.rspec in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/resolver/Jenkinsfile in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/resolver/README.md in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/resolver/.foodcritic in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/resolver/.gitignore in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/resolver/metadata.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/resolver/Gemfile in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/resolver/.rubocop.yml in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/resolver/.env in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/mta/recipes/default.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/resolver/.kitchen.yml in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/resolver/Rakefile in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/mta/recipes/postfix.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/mta/attributes/default.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/mta/templates/default/etc_postfix_main_cf_smtp_auth.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/mta/recipes/smtp_auth.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/mta/templates/default/etc_sasl2_smtpd.conf.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/mta/templates/default/etc_postfix_main.cf.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/mta/templates/default/etc_postfix_master.cf.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/mta/templates/default/etc_sysconfig_postfix.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/mta/.rspec in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/mta/templates/default/etc_postfix_sasl_passwd.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/mta/CHANGELOG.md in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/mta/README.md in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/mta/chefignore in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/mta/.gitignore in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/mta/Jenkinsfile in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/mta/Gemfile in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/mta/.env in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/mta/.rubocop.yml in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/mta/metadata.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/mta/.kitchen.yml in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/mta/Rakefile in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/mta/.foodcritic in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/mta/.DS_Store in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/ntp/attributes/default.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/ntp/templates/default/etc_ntp_conf.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/ntp/recipes/default.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/ntp/templates/default/etc_sysconfig_ntp.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/ntp/CHANGELOG.md in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/ntp/recipes/ntp.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/ntp/.rspec in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/ntp/README.md in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/ntp/Jenkinsfile in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/ntp/metadata.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/ntp/.foodcritic in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/ntp/chefignore in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/ntp/.gitignore in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/ntp/Gemfile in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/ntp/Rakefile in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/ntp/.env in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/ntp/.kitchen.yml in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/profile/recipes/default.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/ntp/.rubocop.yml in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/profile/attributes/default.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/profile/templates/etc_bash_bashrc_local.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/profile/templates/etc_profile.local.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/profile/CHANGELOG.md in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/profile/templates/etc_profile.d_zzz-welcomescreen.sh.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/profile/README.md in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/profile/.rspec in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/profile/chefignore in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/profile/templates/etc_locale.conf.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/profile/Jenkinsfile in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/profile/.gitignore in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/profile/Rakefile in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/profile/.foodcritic in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/profile/metadata.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/profile/.env in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/profile/Gemfile in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/profile/.rubocop.yml in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sysstat/recipes/default.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sysstat/attributes/default.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sysstat/recipes/timers.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sysstat/recipes/sysstat.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sysstat/attributes/timers.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/profile/.kitchen.yml in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sysstat/templates/etc_sysstat_sysstat.cron.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sysstat/templates/etc_sysstat_sysstat.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sysstat/templates/etc_systemd_system_systemd_service.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sysstat/templates/etc_systemd_system_systemd_timer.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sysstat/CHANGELOG.md in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sysstat/Jenkinsfile in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sysstat/.foodcritic in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sysstat/.gitignore in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sysstat/chefignore in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sysstat/Gemfile in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sysstat/metadata.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sysstat/Rakefile in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sysstat/.rspec in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/tty/recipes/default.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sysstat/.kitchen.yml in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sysstat/.env in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sysstat/.rubocop.yml in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sysstat/README.md in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/tty/recipes/securetty.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/tty/templates/securetty.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/tty/attributes/default.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/tty/.rspec in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/tty/CHANGELOG.md in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/tty/Jenkinsfile in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/tty/.foodcritic in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/tty/chefignore in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/tty/README.md in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/tty/Gemfile in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/tty/metadata.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/tty/.gitignore in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/tty/Rakefile in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/tty/.rubocop.yml in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/tty/.env in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/tty/.kitchen.yml in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cron/resources/d.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cron/recipes/default.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cron/providers/d.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cron/templates/default/cron_manage.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cron/templates/default/cron.d.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cron/templates/default/crontab.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cron/attributes/default.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cron/libraries/matchers.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cron/definitions/manage.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cron/README.md in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cron/CHANGELOG.md in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cron/chefignore in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cron/TESTING.md in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cron/MAINTAINERS.toml in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cron/CONTRIBUTING.md in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cron/metadata.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cron/LICENSE in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cron/Berksfile in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cron/Gemfile in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cron/MAINTAINERS.md in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cron/Rakefile in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/lvm/recipes/default.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/lvm/libraries/base_resource_logical_volume.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/lvm/libraries/lvm.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/lvm/libraries/provider_lvm_physical_volume.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/lvm/libraries/matchers.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/lvm/libraries/provider_lvm_logical_volume.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/lvm/libraries/provider_lvm_thin_pool.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/lvm/libraries/provider_lvm_thin_volume.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/lvm/libraries/provider_lvm_volume_group.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/lvm/libraries/resource_lvm_physical_volume.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/lvm/attributes/default.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/lvm/libraries/resource_lvm_thin_pool.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/lvm/libraries/resource_lvm_logical_volume.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/lvm/libraries/resource_lvm_thin_volume.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/lvm/.travis.yml in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/lvm/libraries/resource_lvm_volume_group.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/lvm/chefignore in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/lvm/README.md in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/lvm/MAINTAINERS.toml in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/lvm/TESTING.md in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/lvm/CHANGELOG.md in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/lvm/metadata.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/lvm/LICENSE in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/lvm/.gitignore in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/lvm/Berksfile in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/lvm/CONTRIBUTING.md in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/lvm/.kitchen.yml in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/lvm/Gemfile in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/lvm/Rakefile in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sap/recipes/bladelogic.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/lvm/MAINTAINERS.md in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sap/recipes/clearlogs.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sap/recipes/infratools.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sap/recipes/joschyd.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sap/recipes/default.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sap/recipes/sapdirs.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sap/recipes/register.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sap/recipes/splunk.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sap/recipes/saphostagent.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sap/recipes/virtualip.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sap/attributes/default.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sap/attributes/clearlogs.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sap/templates/opt_imal_etc_joschyd_conf.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sap/templates/systemd_service.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sap/templates/etc_pam.d_sapstartsrv in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sap/templates/systemd_timer.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sap/Jenkinsfile in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sap/CHANGELOG.md in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sap/.rspec in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sap/.foodcritic in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sap/chefignore in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sap/.gitignore in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sap/Gemfile in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sap/metadata.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sap/.env in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sap/Rakefile in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sap/.rubocop.yml in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sap/README.md in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/sap/.kitchen.yml in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/storage-helpers/recipes/default.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/storage-helpers/libraries/storagehelpers/blockdevice.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/storage-helpers/libraries/storagehelpers.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/storage-helpers/README.md in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/storage-helpers/CHANGELOG.md in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/storage-helpers/metadata.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/storage-helpers/.gitignore in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/public_cloud/recipes/azure_cli.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/public_cloud/recipes/azure_customer_packages.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/public_cloud/recipes/actifio.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/storage-helpers/chefignore in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/public_cloud/recipes/remove_user.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/public_cloud/recipes/default.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/public_cloud/recipes/cms_bd.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/public_cloud/recipes/aliyun_cli.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/public_cloud/attributes/default.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/public_cloud/CHANGELOG.md in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/public_cloud/templates/acs/config.json.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/public_cloud/recipes/sap-ticmcmc.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/public_cloud/recipes/gcp_enhanced_monitoring.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/public_cloud/README.md in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/public_cloud/metadata.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/awsfixes/recipes/aws-snap-mon.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/awsfixes/recipes/aws-dataprovider.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/awsfixes/recipes/aws_ephemeral_fix.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/awsfixes/recipes/default.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/awsfixes/recipes/aws-packages.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/awsfixes/recipes/bladelogic.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/awsfixes/recipes/ec2-user.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/awsfixes/recipes/clearlogs-aws.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/awsfixes/recipes/fixes.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/awsfixes/recipes/kernel-fix.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/awsfixes/recipes/sshdcgs.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/awsfixes/recipes/shell.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/awsfixes/recipes/ldap_server.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/awsfixes/attributes/default.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/awsfixes/templates/default/etc_ssl_templates_ldap_server_conf.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/awsfixes/templates/default/etc_ssl_templates_ca_server_conf.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/awsfixes/CHANGELOG.md in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/awsfixes/README.md in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/swap/recipes/default.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/swap/recipes/swap.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/swap/CHANGELOG.md in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/swap/metadata.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/recipes/add_packages_bare.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/recipes/add_packages.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/recipes/cc_networkerclient.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/recipes/cc_mcafee.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/recipes/cfm_base.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/recipes/cfm_base_sp3.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/recipes/cfm_image.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/recipes/cdrc.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/recipes/chrony.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/recipes/db_hardening_ibp.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/recipes/default.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/recipes/db_hardening_s4h.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/recipes/ibr_bm_base.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/recipes/ibr_base.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/recipes/kdump.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/recipes/kdump_cfm.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/recipes/logrotate.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/recipes/mfeaack.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/recipes/mlnx_nic_driver.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/recipes/novalocal.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/recipes/kernel.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/recipes/oshardening.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/recipes/ping_sbit.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/recipes/remove_packages.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/recipes/remove_repo.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/recipes/repo-s15.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/recipes/root_authorized_key.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/recipes/rsyslog.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/recipes/rsyslog_sp3.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/recipes/s4h_base.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/recipes/s4h_bm_base.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/recipes/sayhello.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/recipes/set_boot_local.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/recipes/static_ip.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/recipes/static_ip_bare.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/recipes/static_ip_clearbare.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/recipes/swap.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/recipes/uuidd.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/recipes/virtualip.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/attributes/default.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/templates/clearbare/ifcfg-bond0.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/templates/default/etc_bash_bashrc.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/templates/clearlogs_id_dsa.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/templates/default/etc_init_d_boot_local.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/templates/default/etc_logrotate_d_syslog.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/templates/default/etc_rsyslog_hdb_conf_sp1.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/templates/default/etc_rsyslog_hdb_conf_sp3.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/templates/default/modprobe_mfeaack_conf.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/templates/dhcp.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/templates/dummy-eth1.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/templates/etc_chrony_conf.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/templates/etc_sysconfig_chrony.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/templates/ifcfg-bond0.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/templates/ifcfg-eth0.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/templates/ifcfg-eth1.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/templates/ifroute-bond0.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/templates/ifroute-eth1.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/templates/novalocal_problem_sh.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/templates/ifroute-eth0.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/templates/sayhello_pl.erb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/CHANGELOG.md in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/Jenkinsfile in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/README.md in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/metadata.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/.gitignore in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/.ruby-version in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/cc_s4h_server/Rakefile in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/s4h_server/recipes/default.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/s4h_server/recipes/cdrc.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/s4h_server/recipes/ibr_base.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/s4h_server/recipes/ifroute_eth2.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/s4h_server/recipes/kdump.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/s4h_server/recipes/logrotate.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/s4h_server/recipes/packages.rb in the cache.
+[2021-02-10T07:32:03+00:00] INFO: Storing updated cookbooks/s4h_server/recipes/repo-addition.rb in the cache.
+[2021-02-10T07:32:04+00:00] INFO: Storing updated cookbooks/s4h_server/recipes/repo-removal-s12.rb in the cache.
+[2021-02-10T07:32:04+00:00] INFO: Storing updated cookbooks/awsfixes/recipes/aws-cli.rb in the cache.
+[2021-02-10T07:32:04+00:00] INFO: Storing updated cookbooks/cc_s4h_server/recipes/ldap.rb in the cache.
+[2021-02-10T07:32:04+00:00] INFO: Storing updated cookbooks/awsfixes/recipes/sshdinfra.rb in the cache.
+[2021-02-10T07:32:04+00:00] INFO: Storing updated cookbooks/cc_s4h_server/recipes/etc_bash_rc.rb in the cache.
+[2021-02-10T07:32:04+00:00] INFO: Storing updated cookbooks/cc_s4h_server/recipes/resolv_remove.rb in the cache.
+[2021-02-10T07:32:04+00:00] INFO: Storing updated cookbooks/cc_s4h_server/templates/default/etc_rsyslog_LOG_Forwarder_conf.erb in the cache.
+[2021-02-10T07:32:04+00:00] INFO: Storing updated cookbooks/s4h_server/recipes/resolv_remove.rb in the cache.
+[2021-02-10T07:32:04+00:00] INFO: Storing updated cookbooks/swap/README.md in the cache.
+[2021-02-10T07:32:04+00:00] INFO: Storing updated cookbooks/s4h_server/recipes/hyp_cust_rpm.rb in the cache.
+[2021-02-10T07:32:04+00:00] INFO: Storing updated cookbooks/s4h_server/recipes/s4h_base.rb in the cache.
+[2021-02-10T07:32:04+00:00] INFO: Storing updated cookbooks/awsfixes/metadata.rb in the cache.
+[2021-02-10T07:32:04+00:00] INFO: Storing updated cookbooks/s4h_server/recipes/rsyslog.rb in the cache.
+[2021-02-10T07:32:04+00:00] INFO: Storing updated cookbooks/s4h_server/recipes/sayhello.rb in the cache.
+[2021-02-10T07:32:04+00:00] INFO: Storing updated cookbooks/s4h_server/recipes/saprouter.rb in the cache.
+[2021-02-10T07:32:04+00:00] INFO: Storing updated cookbooks/s4h_server/recipes/sayhello_systemd.rb in the cache.
+[2021-02-10T07:32:04+00:00] INFO: Storing updated cookbooks/s4h_server/templates/default/etc_logrotate_d_syslog.erb in the cache.
+[2021-02-10T07:32:04+00:00] INFO: Storing updated cookbooks/s4h_server/templates/default/etc_sysconfig_network_ifroute.erb in the cache.
+[2021-02-10T07:32:04+00:00] INFO: Storing updated cookbooks/s4h_server/templates/default/etc_rsyslog_hdb_conf.erb in the cache.
+[2021-02-10T07:32:04+00:00] INFO: Storing updated cookbooks/s4h_server/attributes/default.rb in the cache.
+[2021-02-10T07:32:04+00:00] INFO: Storing updated cookbooks/s4h_server/templates/default/sayhello_pl.erb in the cache.
+[2021-02-10T07:32:04+00:00] INFO: Storing updated cookbooks/s4h_server/templates/saprouter/cgs-forwardproxy_conf.erb in the cache.
+[2021-02-10T07:32:04+00:00] INFO: Storing updated cookbooks/s4h_server/templates/default/etc_rsyslog_CDRC_conf.erb in the cache.
+[2021-02-10T07:32:04+00:00] INFO: Storing updated cookbooks/s4h_server/templates/saprouter/allowconnect-forwardproxy_conf.erb in the cache.
+[2021-02-10T07:32:04+00:00] INFO: Storing updated cookbooks/s4h_server/templates/saprouter/etc_apache2_httpd_conf.erb in the cache.
+[2021-02-10T07:32:04+00:00] INFO: Storing updated cookbooks/s4h_server/templates/saprouter/etc_logroated_cgs-forwardproxy.erb in the cache.
+[2021-02-10T07:32:04+00:00] INFO: Storing updated cookbooks/s4h_server/templates/saprouter/myhttpd_conf.erb in the cache.
+[2021-02-10T07:32:04+00:00] INFO: Storing updated cookbooks/s4h_server/templates/saprouter/etc_sysconfig_apache2.erb in the cache.
+[2021-02-10T07:32:04+00:00] INFO: Storing updated cookbooks/s4h_server/templates/saprouter/saprouter_conf.erb in the cache.
+[2021-02-10T07:32:04+00:00] INFO: Storing updated cookbooks/s4h_server/CHANGELOG.md in the cache.
+[2021-02-10T07:32:04+00:00] INFO: Storing updated cookbooks/s4h_server/templates/saprouter/saprouttab.erb in the cache.
+[2021-02-10T07:32:04+00:00] INFO: Storing updated cookbooks/s4h_server/README.md in the cache.
+[2021-02-10T07:32:04+00:00] INFO: Storing updated cookbooks/s4h_server/metadata.rb in the cache.
+[2021-02-10T07:32:04+00:00] INFO: CLoud Provider Type: AZURE
+[2021-02-10T07:32:04+00:00] INFO: Processing template[/etc/nsswitch.conf] action create (nsswitch::nsswitch.conf line 1)
+[2021-02-10T07:32:04+00:00] INFO: template[/etc/nsswitch.conf] backed up to /var/backups/chef/etc/nsswitch.conf.chef-20210210073204.380913
+[2021-02-10T07:32:04+00:00] INFO: template[/etc/nsswitch.conf] updated file contents /etc/nsswitch.conf
+[2021-02-10T07:32:04+00:00] INFO: Processing file[/etc/resolv.conf] action delete (s4h_server::resolv_remove line 11)
+[2021-02-10T07:32:04+00:00] WARN: File /etc/resolv.conf managed by file[/etc/resolv.conf] is really a symlink. Managing the source file instead.
+[2021-02-10T07:32:04+00:00] WARN: Disable this warning by setting `manage_symlink_source true` on the resource
+[2021-02-10T07:32:04+00:00] WARN: In a future Chef release, 'manage_symlink_source' will not be enabled by default
+[2021-02-10T07:32:04+00:00] INFO: file[/etc/resolv.conf] deleted file at /etc/resolv.conf
+[2021-02-10T07:32:04+00:00] INFO: Processing template[/etc/resolv.conf] action create (resolver::resolv.conf line 17)
+[2021-02-10T07:32:04+00:00] INFO: template[/etc/resolv.conf] created file /etc/resolv.conf
+[2021-02-10T07:32:04+00:00] INFO: template[/etc/resolv.conf] updated file contents /etc/resolv.conf
+[2021-02-10T07:32:04+00:00] INFO: template[/etc/resolv.conf] owner changed to 0
+[2021-02-10T07:32:04+00:00] INFO: template[/etc/resolv.conf] group changed to 0
+[2021-02-10T07:32:04+00:00] INFO: template[/etc/resolv.conf] mode changed to 644
+[2021-02-10T07:32:04+00:00] INFO: Processing ohai[reload_hostname] action nothing (resolver::hostname line 11)
+[2021-02-10T07:32:04+00:00] INFO: Processing template[/etc/hostname] action create (resolver::hostname line 17)
+[2021-02-10T07:32:04+00:00] INFO: template[/etc/hostname] backed up to /var/backups/chef/etc/hostname.chef-20210210073204.576737
+[2021-02-10T07:32:04+00:00] INFO: template[/etc/hostname] updated file contents /etc/hostname
+[2021-02-10T07:32:04+00:00] INFO: template[/etc/hostname] sending reload action to ohai[reload_hostname] (immediate)
+[2021-02-10T07:32:04+00:00] INFO: Processing ohai[reload_hostname] action reload (resolver::hosts line 11)
+[2021-02-10T07:32:04+00:00] INFO: The plugin path /etc/chef/ohai/plugins does not exist. Skipping...
+[2021-02-10T07:32:04+00:00] INFO: ohai[reload_hostname] reloaded
+[2021-02-10T07:32:04+00:00] INFO: Processing ohai[reload_hostname] action nothing (resolver::hosts line 11)
+[2021-02-10T07:32:04+00:00] INFO: Processing template[/etc/hosts] action create (resolver::hosts line 16)
+[2021-02-10T07:32:04+00:00] INFO: template[/etc/hosts] backed up to /var/backups/chef/etc/hosts.chef-20210210073204.712592
+[2021-02-10T07:32:04+00:00] INFO: template[/etc/hosts] updated file contents /etc/hosts
+[2021-02-10T07:32:04+00:00] INFO: template[/etc/hosts] sending reload action to ohai[reload_hostname] (immediate)
+[2021-02-10T07:32:04+00:00] INFO: Processing ohai[reload_hostname] action reload (resolver::hosts line 11)
+[2021-02-10T07:32:04+00:00] INFO: The plugin path /etc/chef/ohai/plugins does not exist. Skipping...
+[2021-02-10T07:32:04+00:00] INFO: ohai[reload_hostname] reloaded
+[2021-02-10T07:32:04+00:00] INFO: Processing service[nscd] action disable (resolver::nscd line 10)
+[2021-02-10T07:32:04+00:00] INFO: Processing service[nscd] action stop (resolver::nscd line 10)
+[2021-02-10T07:32:05+00:00] INFO: Processing bash[format_disk_swap_device] action run (swap::swap line 11)
+[2021-02-10T07:32:05+00:00] INFO: Try to find unused BlockDevice of Size at least 32GB
+[2021-02-10T07:32:05+00:00] INFO: Device /dev/sda has partitions and is obviously used, skip!
+[2021-02-10T07:32:05+00:00] INFO: No matching device found!
+[2021-02-10T07:32:05+00:00] INFO: Try to find unused BlockDevice of Size at least 32GB
+[2021-02-10T07:32:05+00:00] INFO: Device /dev/sda has partitions and is obviously used, skip!
+[2021-02-10T07:32:05+00:00] INFO: No matching device found!
+[2021-02-10T07:32:05+00:00] INFO: Processing mount[mount_swap_disk_device] action enable (swap::swap line 18)
+[2021-02-10T07:32:05+00:00] INFO: No UUID for FS with label swap found!
+[2021-02-10T07:32:05+00:00] INFO: No UUID for FS with label swap found!
+[2021-02-10T07:32:05+00:00] INFO: No UUID for FS with label swap found!
+[2021-02-10T07:32:05+00:00] INFO: Processing service[systemd-udev-trigger.service] action restart (swap::swap line 28)
+[2021-02-10T07:32:05+00:00] INFO: service[systemd-udev-trigger.service] restarted
+[2021-02-10T07:32:05+00:00] INFO: Processing script[activate swap] action run (swap::swap line 33)
+[2021-02-10T07:32:05+00:00] INFO: script[activate swap] ran successfully
+[2021-02-10T07:32:05+00:00] INFO: Processing zypper_repository[remove_SAP-Cloud_chef_ruby2.1] action remove (cc_s4h_server::remove_repo line 12)
+[2021-02-10T07:32:05+00:00] INFO: Processing execute[zypper --quiet --non-interactive removerepo SAP-Cloud_chef_ruby2.1] action run (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 55)
+[2021-02-10T07:32:05+00:00] INFO: Processing execute[Guard resource] action run (dynamically defined)
+[2021-02-10T07:32:06+00:00] INFO: Processing zypper_repository[remove_SAP-Cloud_chef_ruby2.1_chef] action remove (cc_s4h_server::remove_repo line 17)
+[2021-02-10T07:32:06+00:00] INFO: Processing execute[zypper --quiet --non-interactive removerepo SAP-Cloud_chef_ruby2.1_chef] action run (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 55)
+[2021-02-10T07:32:06+00:00] INFO: Processing execute[Guard resource] action run (dynamically defined)
+[2021-02-10T07:32:06+00:00] INFO: Processing zypper_repository[remove_SLE-Module-Public-Cloud] action remove (cc_s4h_server::remove_repo line 22)
+[2021-02-10T07:32:06+00:00] INFO: Processing execute[zypper --quiet --non-interactive removerepo SLE-Module-Public-Cloud] action run (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 55)
+[2021-02-10T07:32:06+00:00] INFO: Processing execute[Guard resource] action run (dynamically defined)
+[2021-02-10T07:32:06+00:00] INFO: execute[Guard resource] ran successfully
+[2021-02-10T07:32:06+00:00] INFO: execute[zypper --quiet --non-interactive removerepo SLE-Module-Public-Cloud] ran successfully
+[2021-02-10T07:32:06+00:00] INFO: Processing zypper_repository[remove_SLE-Module-Public-Cloud-Updates] action remove (cc_s4h_server::remove_repo line 27)
+[2021-02-10T07:32:06+00:00] INFO: Processing execute[zypper --quiet --non-interactive removerepo SLE-Module-Public-Cloud-Updates] action run (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 55)
+[2021-02-10T07:32:06+00:00] INFO: Processing execute[Guard resource] action run (dynamically defined)
+[2021-02-10T07:32:06+00:00] INFO: execute[Guard resource] ran successfully
+[2021-02-10T07:32:06+00:00] INFO: execute[zypper --quiet --non-interactive removerepo SLE-Module-Public-Cloud-Updates] ran successfully
+[2021-02-10T07:32:06+00:00] INFO: Processing script[Removal of SLES15 Base Repositories for CC ] action run (cc_s4h_server::remove_repo line 32)
+[2021-02-10T07:32:06+00:00] INFO: script[Removal of SLES15 Base Repositories for CC ] ran successfully
+[2021-02-10T07:32:06+00:00] INFO: Processing zypper_repository[refresh] action refresh (cc_s4h_server::remove_repo line 48)
+[2021-02-10T07:32:06+00:00] INFO: Processing execute[zypper --quiet --non-interactive refresh --force refresh] action run (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 61)
+[2021-02-10T07:32:06+00:00] INFO: Processing execute[Guard resource] action run (dynamically defined)
+[2021-02-10T07:32:06+00:00] INFO: Processing template[/etc/zypp/zypp.conf] action create (zypper::default line 11)
+[2021-02-10T07:32:06+00:00] INFO: template[/etc/zypp/zypp.conf] backed up to /var/backups/chef/etc/zypp/zypp.conf.chef-20210210073206.966428
+[2021-02-10T07:32:06+00:00] INFO: template[/etc/zypp/zypp.conf] updated file contents /etc/zypp/zypp.conf
+[2021-02-10T07:32:06+00:00] INFO: Processing template[/etc/zypp/zypper.conf] action create (zypper::default line 18)
+[2021-02-10T07:32:06+00:00] INFO: template[/etc/zypp/zypper.conf] backed up to /var/backups/chef/etc/zypp/zypper.conf.chef-20210210073206.979338
+[2021-02-10T07:32:06+00:00] INFO: template[/etc/zypp/zypper.conf] updated file contents /etc/zypp/zypper.conf
+[2021-02-10T07:32:06+00:00] INFO: Processing zypper_repository[SLE-Module-Basesystem] action add (zypper::default line 26)
+[2021-02-10T07:32:06+00:00] INFO: Processing template[/etc/zypp/repos.d/SLE-Module-Basesystem.repo] action create (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 40)
+[2021-02-10T07:32:06+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Basesystem.repo] created file /etc/zypp/repos.d/SLE-Module-Basesystem.repo
+[2021-02-10T07:32:06+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Basesystem.repo] updated file contents /etc/zypp/repos.d/SLE-Module-Basesystem.repo
+[2021-02-10T07:32:06+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Basesystem.repo] mode changed to 644
+[2021-02-10T07:32:06+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Basesystem.repo] sending refresh action to zypper_repository[SLE-Module-Basesystem] (immediate)
+[2021-02-10T07:32:06+00:00] INFO: Processing zypper_repository[SLE-Module-Basesystem] action refresh (zypper::default line 26)
+[2021-02-10T07:32:06+00:00] INFO: Processing execute[zypper --quiet --non-interactive refresh --force SLE-Module-Basesystem] action run (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 61)
+[2021-02-10T07:32:06+00:00] INFO: Processing execute[Guard resource] action run (dynamically defined)
+[2021-02-10T07:32:07+00:00] INFO: execute[Guard resource] ran successfully
+[2021-02-10T07:32:13+00:00] INFO: execute[zypper --quiet --non-interactive refresh --force SLE-Module-Basesystem] ran successfully
+[2021-02-10T07:32:13+00:00] INFO: Processing zypper_repository[SLE-Module-Basesystem] action refresh (zypper::default line 26)
+[2021-02-10T07:32:13+00:00] INFO: Processing execute[zypper --quiet --non-interactive refresh --force SLE-Module-Basesystem] action run (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 61)
+[2021-02-10T07:32:13+00:00] INFO: Processing execute[Guard resource] action run (dynamically defined)
+[2021-02-10T07:32:13+00:00] INFO: execute[Guard resource] ran successfully
+[2021-02-10T07:32:17+00:00] INFO: execute[zypper --quiet --non-interactive refresh --force SLE-Module-Basesystem] ran successfully
+[2021-02-10T07:32:17+00:00] INFO: Processing zypper_repository[SLE-Module-Basesystem-Updates] action add (zypper::default line 26)
+[2021-02-10T07:32:17+00:00] INFO: Processing template[/etc/zypp/repos.d/SLE-Module-Basesystem-Updates.repo] action create (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 40)
+[2021-02-10T07:32:17+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Basesystem-Updates.repo] created file /etc/zypp/repos.d/SLE-Module-Basesystem-Updates.repo
+[2021-02-10T07:32:17+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Basesystem-Updates.repo] updated file contents /etc/zypp/repos.d/SLE-Module-Basesystem-Updates.repo
+[2021-02-10T07:32:17+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Basesystem-Updates.repo] mode changed to 644
+[2021-02-10T07:32:17+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Basesystem-Updates.repo] sending refresh action to zypper_repository[SLE-Module-Basesystem-Updates] (immediate)
+[2021-02-10T07:32:17+00:00] INFO: Processing zypper_repository[SLE-Module-Basesystem-Updates] action refresh (zypper::default line 26)
+[2021-02-10T07:32:17+00:00] INFO: Processing execute[zypper --quiet --non-interactive refresh --force SLE-Module-Basesystem-Updates] action run (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 61)
+[2021-02-10T07:32:17+00:00] INFO: Processing execute[Guard resource] action run (dynamically defined)
+[2021-02-10T07:32:17+00:00] INFO: execute[Guard resource] ran successfully
+[2021-02-10T07:32:24+00:00] INFO: execute[zypper --quiet --non-interactive refresh --force SLE-Module-Basesystem-Updates] ran successfully
+[2021-02-10T07:32:24+00:00] INFO: Processing zypper_repository[SLE-Module-Basesystem-Updates] action refresh (zypper::default line 26)
+[2021-02-10T07:32:24+00:00] INFO: Processing execute[zypper --quiet --non-interactive refresh --force SLE-Module-Basesystem-Updates] action run (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 61)
+[2021-02-10T07:32:24+00:00] INFO: Processing execute[Guard resource] action run (dynamically defined)
+[2021-02-10T07:32:24+00:00] INFO: execute[Guard resource] ran successfully
+[2021-02-10T07:32:29+00:00] INFO: execute[zypper --quiet --non-interactive refresh --force SLE-Module-Basesystem-Updates] ran successfully
+[2021-02-10T07:32:29+00:00] INFO: Processing zypper_repository[SLE-Module-Containers] action add (zypper::default line 26)
+[2021-02-10T07:32:29+00:00] INFO: Processing template[/etc/zypp/repos.d/SLE-Module-Containers.repo] action create (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 40)
+[2021-02-10T07:32:29+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Containers.repo] created file /etc/zypp/repos.d/SLE-Module-Containers.repo
+[2021-02-10T07:32:29+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Containers.repo] updated file contents /etc/zypp/repos.d/SLE-Module-Containers.repo
+[2021-02-10T07:32:29+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Containers.repo] mode changed to 644
+[2021-02-10T07:32:29+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Containers.repo] sending refresh action to zypper_repository[SLE-Module-Containers] (immediate)
+[2021-02-10T07:32:29+00:00] INFO: Processing zypper_repository[SLE-Module-Containers] action refresh (zypper::default line 26)
+[2021-02-10T07:32:29+00:00] INFO: Processing execute[zypper --quiet --non-interactive refresh --force SLE-Module-Containers] action run (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 61)
+[2021-02-10T07:32:29+00:00] INFO: Processing execute[Guard resource] action run (dynamically defined)
+[2021-02-10T07:32:29+00:00] INFO: execute[Guard resource] ran successfully
+[2021-02-10T07:32:33+00:00] INFO: execute[zypper --quiet --non-interactive refresh --force SLE-Module-Containers] ran successfully
+[2021-02-10T07:32:33+00:00] INFO: Processing zypper_repository[SLE-Module-Containers] action refresh (zypper::default line 26)
+[2021-02-10T07:32:33+00:00] INFO: Processing execute[zypper --quiet --non-interactive refresh --force SLE-Module-Containers] action run (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 61)
+[2021-02-10T07:32:33+00:00] INFO: Processing execute[Guard resource] action run (dynamically defined)
+[2021-02-10T07:32:34+00:00] INFO: execute[Guard resource] ran successfully
+[2021-02-10T07:32:37+00:00] INFO: execute[zypper --quiet --non-interactive refresh --force SLE-Module-Containers] ran successfully
+[2021-02-10T07:32:37+00:00] INFO: Processing zypper_repository[SLE-Module-Containers-Updates] action add (zypper::default line 26)
+[2021-02-10T07:32:37+00:00] INFO: Processing template[/etc/zypp/repos.d/SLE-Module-Containers-Updates.repo] action create (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 40)
+[2021-02-10T07:32:37+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Containers-Updates.repo] created file /etc/zypp/repos.d/SLE-Module-Containers-Updates.repo
+[2021-02-10T07:32:37+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Containers-Updates.repo] updated file contents /etc/zypp/repos.d/SLE-Module-Containers-Updates.repo
+[2021-02-10T07:32:37+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Containers-Updates.repo] mode changed to 644
+[2021-02-10T07:32:37+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Containers-Updates.repo] sending refresh action to zypper_repository[SLE-Module-Containers-Updates] (immediate)
+[2021-02-10T07:32:37+00:00] INFO: Processing zypper_repository[SLE-Module-Containers-Updates] action refresh (zypper::default line 26)
+[2021-02-10T07:32:37+00:00] INFO: Processing execute[zypper --quiet --non-interactive refresh --force SLE-Module-Containers-Updates] action run (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 61)
+[2021-02-10T07:32:37+00:00] INFO: Processing execute[Guard resource] action run (dynamically defined)
+[2021-02-10T07:32:37+00:00] INFO: execute[Guard resource] ran successfully
+[2021-02-10T07:32:41+00:00] INFO: execute[zypper --quiet --non-interactive refresh --force SLE-Module-Containers-Updates] ran successfully
+[2021-02-10T07:32:41+00:00] INFO: Processing zypper_repository[SLE-Module-Containers-Updates] action refresh (zypper::default line 26)
+[2021-02-10T07:32:41+00:00] INFO: Processing execute[zypper --quiet --non-interactive refresh --force SLE-Module-Containers-Updates] action run (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 61)
+[2021-02-10T07:32:41+00:00] INFO: Processing execute[Guard resource] action run (dynamically defined)
+[2021-02-10T07:32:42+00:00] INFO: execute[Guard resource] ran successfully
+[2021-02-10T07:32:45+00:00] INFO: execute[zypper --quiet --non-interactive refresh --force SLE-Module-Containers-Updates] ran successfully
+[2021-02-10T07:32:45+00:00] INFO: Processing zypper_repository[SLE-Module-Desktop-Applications] action add (zypper::default line 26)
+[2021-02-10T07:32:45+00:00] INFO: Processing template[/etc/zypp/repos.d/SLE-Module-Desktop-Applications.repo] action create (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 40)
+[2021-02-10T07:32:45+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Desktop-Applications.repo] created file /etc/zypp/repos.d/SLE-Module-Desktop-Applications.repo
+[2021-02-10T07:32:45+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Desktop-Applications.repo] updated file contents /etc/zypp/repos.d/SLE-Module-Desktop-Applications.repo
+[2021-02-10T07:32:45+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Desktop-Applications.repo] mode changed to 644
+[2021-02-10T07:32:45+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Desktop-Applications.repo] sending refresh action to zypper_repository[SLE-Module-Desktop-Applications] (immediate)
+[2021-02-10T07:32:45+00:00] INFO: Processing zypper_repository[SLE-Module-Desktop-Applications] action refresh (zypper::default line 26)
+[2021-02-10T07:32:45+00:00] INFO: Processing execute[zypper --quiet --non-interactive refresh --force SLE-Module-Desktop-Applications] action run (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 61)
+[2021-02-10T07:32:45+00:00] INFO: Processing execute[Guard resource] action run (dynamically defined)
+[2021-02-10T07:32:45+00:00] INFO: execute[Guard resource] ran successfully
+[2021-02-10T07:32:51+00:00] INFO: execute[zypper --quiet --non-interactive refresh --force SLE-Module-Desktop-Applications] ran successfully
+[2021-02-10T07:32:51+00:00] INFO: Processing zypper_repository[SLE-Module-Desktop-Applications] action refresh (zypper::default line 26)
+[2021-02-10T07:32:51+00:00] INFO: Processing execute[zypper --quiet --non-interactive refresh --force SLE-Module-Desktop-Applications] action run (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 61)
+[2021-02-10T07:32:51+00:00] INFO: Processing execute[Guard resource] action run (dynamically defined)
+[2021-02-10T07:32:51+00:00] INFO: execute[Guard resource] ran successfully
+[2021-02-10T07:32:55+00:00] INFO: execute[zypper --quiet --non-interactive refresh --force SLE-Module-Desktop-Applications] ran successfully
+[2021-02-10T07:32:55+00:00] INFO: Processing zypper_repository[SLE-Module-Desktop-Applications-Updates] action add (zypper::default line 26)
+[2021-02-10T07:32:55+00:00] INFO: Processing template[/etc/zypp/repos.d/SLE-Module-Desktop-Applications-Updates.repo] action create (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 40)
+[2021-02-10T07:32:55+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Desktop-Applications-Updates.repo] created file /etc/zypp/repos.d/SLE-Module-Desktop-Applications-Updates.repo
+[2021-02-10T07:32:55+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Desktop-Applications-Updates.repo] updated file contents /etc/zypp/repos.d/SLE-Module-Desktop-Applications-Updates.repo
+[2021-02-10T07:32:55+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Desktop-Applications-Updates.repo] mode changed to 644
+[2021-02-10T07:32:55+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Desktop-Applications-Updates.repo] sending refresh action to zypper_repository[SLE-Module-Desktop-Applications-Updates] (immediate)
+[2021-02-10T07:32:55+00:00] INFO: Processing zypper_repository[SLE-Module-Desktop-Applications-Updates] action refresh (zypper::default line 26)
+[2021-02-10T07:32:55+00:00] INFO: Processing execute[zypper --quiet --non-interactive refresh --force SLE-Module-Desktop-Applications-Updates] action run (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 61)
+[2021-02-10T07:32:55+00:00] INFO: Processing execute[Guard resource] action run (dynamically defined)
+[2021-02-10T07:32:55+00:00] INFO: execute[Guard resource] ran successfully
+[2021-02-10T07:33:00+00:00] INFO: execute[zypper --quiet --non-interactive refresh --force SLE-Module-Desktop-Applications-Updates] ran successfully
+[2021-02-10T07:33:00+00:00] INFO: Processing zypper_repository[SLE-Module-Desktop-Applications-Updates] action refresh (zypper::default line 26)
+[2021-02-10T07:33:00+00:00] INFO: Processing execute[zypper --quiet --non-interactive refresh --force SLE-Module-Desktop-Applications-Updates] action run (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 61)
+[2021-02-10T07:33:00+00:00] INFO: Processing execute[Guard resource] action run (dynamically defined)
+[2021-02-10T07:33:00+00:00] INFO: execute[Guard resource] ran successfully
+[2021-02-10T07:33:03+00:00] INFO: execute[zypper --quiet --non-interactive refresh --force SLE-Module-Desktop-Applications-Updates] ran successfully
+[2021-02-10T07:33:03+00:00] INFO: Processing zypper_repository[SLE-Module-Development-Tools] action add (zypper::default line 26)
+[2021-02-10T07:33:03+00:00] INFO: Processing template[/etc/zypp/repos.d/SLE-Module-Development-Tools.repo] action create (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 40)
+[2021-02-10T07:33:03+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Development-Tools.repo] created file /etc/zypp/repos.d/SLE-Module-Development-Tools.repo
+[2021-02-10T07:33:03+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Development-Tools.repo] updated file contents /etc/zypp/repos.d/SLE-Module-Development-Tools.repo
+[2021-02-10T07:33:04+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Development-Tools.repo] mode changed to 644
+[2021-02-10T07:33:04+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Development-Tools.repo] sending refresh action to zypper_repository[SLE-Module-Development-Tools] (immediate)
+[2021-02-10T07:33:04+00:00] INFO: Processing zypper_repository[SLE-Module-Development-Tools] action refresh (zypper::default line 26)
+[2021-02-10T07:33:04+00:00] INFO: Processing execute[zypper --quiet --non-interactive refresh --force SLE-Module-Development-Tools] action run (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 61)
+[2021-02-10T07:33:04+00:00] INFO: Processing execute[Guard resource] action run (dynamically defined)
+[2021-02-10T07:33:04+00:00] INFO: execute[Guard resource] ran successfully
+[2021-02-10T07:33:08+00:00] INFO: execute[zypper --quiet --non-interactive refresh --force SLE-Module-Development-Tools] ran successfully
+[2021-02-10T07:33:08+00:00] INFO: Processing zypper_repository[SLE-Module-Development-Tools] action refresh (zypper::default line 26)
+[2021-02-10T07:33:08+00:00] INFO: Processing execute[zypper --quiet --non-interactive refresh --force SLE-Module-Development-Tools] action run (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 61)
+[2021-02-10T07:33:08+00:00] INFO: Processing execute[Guard resource] action run (dynamically defined)
+[2021-02-10T07:33:08+00:00] INFO: execute[Guard resource] ran successfully
+[2021-02-10T07:33:12+00:00] INFO: execute[zypper --quiet --non-interactive refresh --force SLE-Module-Development-Tools] ran successfully
+[2021-02-10T07:33:12+00:00] INFO: Processing zypper_repository[SLE-Module-Development-Tools-Updates] action add (zypper::default line 26)
+[2021-02-10T07:33:12+00:00] INFO: Processing template[/etc/zypp/repos.d/SLE-Module-Development-Tools-Updates.repo] action create (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 40)
+[2021-02-10T07:33:12+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Development-Tools-Updates.repo] created file /etc/zypp/repos.d/SLE-Module-Development-Tools-Updates.repo
+[2021-02-10T07:33:12+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Development-Tools-Updates.repo] updated file contents /etc/zypp/repos.d/SLE-Module-Development-Tools-Updates.repo
+[2021-02-10T07:33:12+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Development-Tools-Updates.repo] mode changed to 644
+[2021-02-10T07:33:12+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Development-Tools-Updates.repo] sending refresh action to zypper_repository[SLE-Module-Development-Tools-Updates] (immediate)
+[2021-02-10T07:33:12+00:00] INFO: Processing zypper_repository[SLE-Module-Development-Tools-Updates] action refresh (zypper::default line 26)
+[2021-02-10T07:33:12+00:00] INFO: Processing execute[zypper --quiet --non-interactive refresh --force SLE-Module-Development-Tools-Updates] action run (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 61)
+[2021-02-10T07:33:12+00:00] INFO: Processing execute[Guard resource] action run (dynamically defined)
+[2021-02-10T07:33:12+00:00] INFO: execute[Guard resource] ran successfully
+[2021-02-10T07:33:17+00:00] INFO: execute[zypper --quiet --non-interactive refresh --force SLE-Module-Development-Tools-Updates] ran successfully
+[2021-02-10T07:33:17+00:00] INFO: Processing zypper_repository[SLE-Module-Development-Tools-Updates] action refresh (zypper::default line 26)
+[2021-02-10T07:33:17+00:00] INFO: Processing execute[zypper --quiet --non-interactive refresh --force SLE-Module-Development-Tools-Updates] action run (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 61)
+[2021-02-10T07:33:17+00:00] INFO: Processing execute[Guard resource] action run (dynamically defined)
+[2021-02-10T07:33:17+00:00] INFO: execute[Guard resource] ran successfully
+[2021-02-10T07:33:20+00:00] INFO: execute[zypper --quiet --non-interactive refresh --force SLE-Module-Development-Tools-Updates] ran successfully
+[2021-02-10T07:33:20+00:00] INFO: Processing zypper_repository[SLE-Module-Legacy] action add (zypper::default line 26)
+[2021-02-10T07:33:20+00:00] INFO: Processing template[/etc/zypp/repos.d/SLE-Module-Legacy.repo] action create (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 40)
+[2021-02-10T07:33:20+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Legacy.repo] created file /etc/zypp/repos.d/SLE-Module-Legacy.repo
+[2021-02-10T07:33:20+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Legacy.repo] updated file contents /etc/zypp/repos.d/SLE-Module-Legacy.repo
+[2021-02-10T07:33:20+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Legacy.repo] mode changed to 644
+[2021-02-10T07:33:20+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Legacy.repo] sending refresh action to zypper_repository[SLE-Module-Legacy] (immediate)
+[2021-02-10T07:33:20+00:00] INFO: Processing zypper_repository[SLE-Module-Legacy] action refresh (zypper::default line 26)
+[2021-02-10T07:33:20+00:00] INFO: Processing execute[zypper --quiet --non-interactive refresh --force SLE-Module-Legacy] action run (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 61)
+[2021-02-10T07:33:20+00:00] INFO: Processing execute[Guard resource] action run (dynamically defined)
+[2021-02-10T07:33:20+00:00] INFO: execute[Guard resource] ran successfully
+[2021-02-10T07:33:25+00:00] INFO: execute[zypper --quiet --non-interactive refresh --force SLE-Module-Legacy] ran successfully
+[2021-02-10T07:33:25+00:00] INFO: Processing zypper_repository[SLE-Module-Legacy] action refresh (zypper::default line 26)
+[2021-02-10T07:33:25+00:00] INFO: Processing execute[zypper --quiet --non-interactive refresh --force SLE-Module-Legacy] action run (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 61)
+[2021-02-10T07:33:25+00:00] INFO: Processing execute[Guard resource] action run (dynamically defined)
+[2021-02-10T07:33:25+00:00] INFO: execute[Guard resource] ran successfully
+[2021-02-10T07:33:28+00:00] INFO: execute[zypper --quiet --non-interactive refresh --force SLE-Module-Legacy] ran successfully
+[2021-02-10T07:33:28+00:00] INFO: Processing zypper_repository[SLE-Module-Legacy-Updates] action add (zypper::default line 26)
+[2021-02-10T07:33:28+00:00] INFO: Processing template[/etc/zypp/repos.d/SLE-Module-Legacy-Updates.repo] action create (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 40)
+[2021-02-10T07:33:28+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Legacy-Updates.repo] created file /etc/zypp/repos.d/SLE-Module-Legacy-Updates.repo
+[2021-02-10T07:33:28+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Legacy-Updates.repo] updated file contents /etc/zypp/repos.d/SLE-Module-Legacy-Updates.repo
+[2021-02-10T07:33:28+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Legacy-Updates.repo] mode changed to 644
+[2021-02-10T07:33:28+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Legacy-Updates.repo] sending refresh action to zypper_repository[SLE-Module-Legacy-Updates] (immediate)
+[2021-02-10T07:33:28+00:00] INFO: Processing zypper_repository[SLE-Module-Legacy-Updates] action refresh (zypper::default line 26)
+[2021-02-10T07:33:28+00:00] INFO: Processing execute[zypper --quiet --non-interactive refresh --force SLE-Module-Legacy-Updates] action run (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 61)
+[2021-02-10T07:33:28+00:00] INFO: Processing execute[Guard resource] action run (dynamically defined)
+[2021-02-10T07:33:28+00:00] INFO: execute[Guard resource] ran successfully
+[2021-02-10T07:33:33+00:00] INFO: execute[zypper --quiet --non-interactive refresh --force SLE-Module-Legacy-Updates] ran successfully
+[2021-02-10T07:33:33+00:00] INFO: Processing zypper_repository[SLE-Module-Legacy-Updates] action refresh (zypper::default line 26)
+[2021-02-10T07:33:33+00:00] INFO: Processing execute[zypper --quiet --non-interactive refresh --force SLE-Module-Legacy-Updates] action run (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 61)
+[2021-02-10T07:33:33+00:00] INFO: Processing execute[Guard resource] action run (dynamically defined)
+[2021-02-10T07:33:33+00:00] INFO: execute[Guard resource] ran successfully
+[2021-02-10T07:33:36+00:00] INFO: execute[zypper --quiet --non-interactive refresh --force SLE-Module-Legacy-Updates] ran successfully
+[2021-02-10T07:33:36+00:00] INFO: Processing zypper_repository[SLE-Module-Public-Cloud] action add (zypper::default line 26)
+[2021-02-10T07:33:36+00:00] INFO: Processing template[/etc/zypp/repos.d/SLE-Module-Public-Cloud.repo] action create (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 40)
+[2021-02-10T07:33:36+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Public-Cloud.repo] created file /etc/zypp/repos.d/SLE-Module-Public-Cloud.repo
+[2021-02-10T07:33:36+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Public-Cloud.repo] updated file contents /etc/zypp/repos.d/SLE-Module-Public-Cloud.repo
+[2021-02-10T07:33:36+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Public-Cloud.repo] mode changed to 644
+[2021-02-10T07:33:36+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Public-Cloud.repo] sending refresh action to zypper_repository[SLE-Module-Public-Cloud] (immediate)
+[2021-02-10T07:33:36+00:00] INFO: Processing zypper_repository[SLE-Module-Public-Cloud] action refresh (zypper::default line 26)
+[2021-02-10T07:33:36+00:00] INFO: Processing execute[zypper --quiet --non-interactive refresh --force SLE-Module-Public-Cloud] action run (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 61)
+[2021-02-10T07:33:36+00:00] INFO: Processing execute[Guard resource] action run (dynamically defined)
+[2021-02-10T07:33:36+00:00] INFO: execute[Guard resource] ran successfully
+[2021-02-10T07:33:40+00:00] INFO: execute[zypper --quiet --non-interactive refresh --force SLE-Module-Public-Cloud] ran successfully
+[2021-02-10T07:33:40+00:00] INFO: Processing zypper_repository[SLE-Module-Public-Cloud] action refresh (zypper::default line 26)
+[2021-02-10T07:33:40+00:00] INFO: Processing execute[zypper --quiet --non-interactive refresh --force SLE-Module-Public-Cloud] action run (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 61)
+[2021-02-10T07:33:40+00:00] INFO: Processing execute[Guard resource] action run (dynamically defined)
+[2021-02-10T07:33:40+00:00] INFO: execute[Guard resource] ran successfully
+[2021-02-10T07:33:44+00:00] INFO: execute[zypper --quiet --non-interactive refresh --force SLE-Module-Public-Cloud] ran successfully
+[2021-02-10T07:33:44+00:00] INFO: Processing zypper_repository[SLE-Module-Public-Cloud-Updates] action add (zypper::default line 26)
+[2021-02-10T07:33:44+00:00] INFO: Processing template[/etc/zypp/repos.d/SLE-Module-Public-Cloud-Updates.repo] action create (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 40)
+[2021-02-10T07:33:44+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Public-Cloud-Updates.repo] created file /etc/zypp/repos.d/SLE-Module-Public-Cloud-Updates.repo
+[2021-02-10T07:33:44+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Public-Cloud-Updates.repo] updated file contents /etc/zypp/repos.d/SLE-Module-Public-Cloud-Updates.repo
+[2021-02-10T07:33:44+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Public-Cloud-Updates.repo] mode changed to 644
+[2021-02-10T07:33:44+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Public-Cloud-Updates.repo] sending refresh action to zypper_repository[SLE-Module-Public-Cloud-Updates] (immediate)
+[2021-02-10T07:33:44+00:00] INFO: Processing zypper_repository[SLE-Module-Public-Cloud-Updates] action refresh (zypper::default line 26)
+[2021-02-10T07:33:44+00:00] INFO: Processing execute[zypper --quiet --non-interactive refresh --force SLE-Module-Public-Cloud-Updates] action run (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 61)
+[2021-02-10T07:33:44+00:00] INFO: Processing execute[Guard resource] action run (dynamically defined)
+[2021-02-10T07:33:44+00:00] INFO: execute[Guard resource] ran successfully
+[2021-02-10T07:33:49+00:00] INFO: execute[zypper --quiet --non-interactive refresh --force SLE-Module-Public-Cloud-Updates] ran successfully
+[2021-02-10T07:33:49+00:00] INFO: Processing zypper_repository[SLE-Module-Public-Cloud-Updates] action refresh (zypper::default line 26)
+[2021-02-10T07:33:49+00:00] INFO: Processing execute[zypper --quiet --non-interactive refresh --force SLE-Module-Public-Cloud-Updates] action run (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 61)
+[2021-02-10T07:33:49+00:00] INFO: Processing execute[Guard resource] action run (dynamically defined)
+[2021-02-10T07:33:49+00:00] INFO: execute[Guard resource] ran successfully
+[2021-02-10T07:33:53+00:00] INFO: execute[zypper --quiet --non-interactive refresh --force SLE-Module-Public-Cloud-Updates] ran successfully
+[2021-02-10T07:33:53+00:00] INFO: Processing zypper_repository[SLE-Module-Server-Applications] action add (zypper::default line 26)
+[2021-02-10T07:33:53+00:00] INFO: Processing template[/etc/zypp/repos.d/SLE-Module-Server-Applications.repo] action create (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 40)
+[2021-02-10T07:33:53+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Server-Applications.repo] created file /etc/zypp/repos.d/SLE-Module-Server-Applications.repo
+[2021-02-10T07:33:53+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Server-Applications.repo] updated file contents /etc/zypp/repos.d/SLE-Module-Server-Applications.repo
+[2021-02-10T07:33:53+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Server-Applications.repo] mode changed to 644
+[2021-02-10T07:33:53+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Server-Applications.repo] sending refresh action to zypper_repository[SLE-Module-Server-Applications] (immediate)
+[2021-02-10T07:33:53+00:00] INFO: Processing zypper_repository[SLE-Module-Server-Applications] action refresh (zypper::default line 26)
+[2021-02-10T07:33:53+00:00] INFO: Processing execute[zypper --quiet --non-interactive refresh --force SLE-Module-Server-Applications] action run (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 61)
+[2021-02-10T07:33:53+00:00] INFO: Processing execute[Guard resource] action run (dynamically defined)
+[2021-02-10T07:33:53+00:00] INFO: execute[Guard resource] ran successfully
+[2021-02-10T07:33:58+00:00] INFO: execute[zypper --quiet --non-interactive refresh --force SLE-Module-Server-Applications] ran successfully
+[2021-02-10T07:33:58+00:00] INFO: Processing zypper_repository[SLE-Module-Server-Applications] action refresh (zypper::default line 26)
+[2021-02-10T07:33:58+00:00] INFO: Processing execute[zypper --quiet --non-interactive refresh --force SLE-Module-Server-Applications] action run (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 61)
+[2021-02-10T07:33:58+00:00] INFO: Processing execute[Guard resource] action run (dynamically defined)
+[2021-02-10T07:33:58+00:00] INFO: execute[Guard resource] ran successfully
+[2021-02-10T07:34:03+00:00] INFO: execute[zypper --quiet --non-interactive refresh --force SLE-Module-Server-Applications] ran successfully
+[2021-02-10T07:34:03+00:00] INFO: Processing zypper_repository[SLE-Module-Server-Applications-Updates] action add (zypper::default line 26)
+[2021-02-10T07:34:03+00:00] INFO: Processing template[/etc/zypp/repos.d/SLE-Module-Server-Applications-Updates.repo] action create (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 40)
+[2021-02-10T07:34:03+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Server-Applications-Updates.repo] created file /etc/zypp/repos.d/SLE-Module-Server-Applications-Updates.repo
+[2021-02-10T07:34:03+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Server-Applications-Updates.repo] updated file contents /etc/zypp/repos.d/SLE-Module-Server-Applications-Updates.repo
+[2021-02-10T07:34:03+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Server-Applications-Updates.repo] mode changed to 644
+[2021-02-10T07:34:03+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Server-Applications-Updates.repo] sending refresh action to zypper_repository[SLE-Module-Server-Applications-Updates] (immediate)
+[2021-02-10T07:34:03+00:00] INFO: Processing zypper_repository[SLE-Module-Server-Applications-Updates] action refresh (zypper::default line 26)
+[2021-02-10T07:34:03+00:00] INFO: Processing execute[zypper --quiet --non-interactive refresh --force SLE-Module-Server-Applications-Updates] action run (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 61)
+[2021-02-10T07:34:03+00:00] INFO: Processing execute[Guard resource] action run (dynamically defined)
+[2021-02-10T07:34:03+00:00] INFO: execute[Guard resource] ran successfully
+[2021-02-10T07:34:07+00:00] INFO: execute[zypper --quiet --non-interactive refresh --force SLE-Module-Server-Applications-Updates] ran successfully
+[2021-02-10T07:34:07+00:00] INFO: Processing zypper_repository[SLE-Module-Server-Applications-Updates] action refresh (zypper::default line 26)
+[2021-02-10T07:34:07+00:00] INFO: Processing execute[zypper --quiet --non-interactive refresh --force SLE-Module-Server-Applications-Updates] action run (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 61)
+[2021-02-10T07:34:07+00:00] INFO: Processing execute[Guard resource] action run (dynamically defined)
+[2021-02-10T07:34:07+00:00] INFO: execute[Guard resource] ran successfully
+[2021-02-10T07:34:11+00:00] INFO: execute[zypper --quiet --non-interactive refresh --force SLE-Module-Server-Applications-Updates] ran successfully
+[2021-02-10T07:34:11+00:00] INFO: Processing zypper_repository[SLE-Product-SLES] action add (zypper::default line 26)
+[2021-02-10T07:34:11+00:00] INFO: Processing template[/etc/zypp/repos.d/SLE-Product-SLES.repo] action create (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 40)
+[2021-02-10T07:34:11+00:00] INFO: template[/etc/zypp/repos.d/SLE-Product-SLES.repo] created file /etc/zypp/repos.d/SLE-Product-SLES.repo
+[2021-02-10T07:34:11+00:00] INFO: template[/etc/zypp/repos.d/SLE-Product-SLES.repo] updated file contents /etc/zypp/repos.d/SLE-Product-SLES.repo
+[2021-02-10T07:34:11+00:00] INFO: template[/etc/zypp/repos.d/SLE-Product-SLES.repo] mode changed to 644
+[2021-02-10T07:34:11+00:00] INFO: template[/etc/zypp/repos.d/SLE-Product-SLES.repo] sending refresh action to zypper_repository[SLE-Product-SLES] (immediate)
+[2021-02-10T07:34:11+00:00] INFO: Processing zypper_repository[SLE-Product-SLES] action refresh (zypper::default line 26)
+[2021-02-10T07:34:11+00:00] INFO: Processing execute[zypper --quiet --non-interactive refresh --force SLE-Product-SLES] action run (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 61)
+[2021-02-10T07:34:11+00:00] INFO: Processing execute[Guard resource] action run (dynamically defined)
+[2021-02-10T07:34:11+00:00] INFO: execute[Guard resource] ran successfully
+[2021-02-10T07:34:14+00:00] INFO: execute[zypper --quiet --non-interactive refresh --force SLE-Product-SLES] ran successfully
+[2021-02-10T07:34:14+00:00] INFO: Processing zypper_repository[SLE-Product-SLES] action refresh (zypper::default line 26)
+[2021-02-10T07:34:14+00:00] INFO: Processing execute[zypper --quiet --non-interactive refresh --force SLE-Product-SLES] action run (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 61)
+[2021-02-10T07:34:14+00:00] INFO: Processing execute[Guard resource] action run (dynamically defined)
+[2021-02-10T07:34:15+00:00] INFO: execute[Guard resource] ran successfully
+[2021-02-10T07:34:18+00:00] INFO: execute[zypper --quiet --non-interactive refresh --force SLE-Product-SLES] ran successfully
+[2021-02-10T07:34:18+00:00] INFO: Processing zypper_repository[SLE-Product-SLES-Updates] action add (zypper::default line 26)
+[2021-02-10T07:34:18+00:00] INFO: Processing template[/etc/zypp/repos.d/SLE-Product-SLES-Updates.repo] action create (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 40)
+[2021-02-10T07:34:18+00:00] INFO: template[/etc/zypp/repos.d/SLE-Product-SLES-Updates.repo] created file /etc/zypp/repos.d/SLE-Product-SLES-Updates.repo
+[2021-02-10T07:34:18+00:00] INFO: template[/etc/zypp/repos.d/SLE-Product-SLES-Updates.repo] updated file contents /etc/zypp/repos.d/SLE-Product-SLES-Updates.repo
+[2021-02-10T07:34:18+00:00] INFO: template[/etc/zypp/repos.d/SLE-Product-SLES-Updates.repo] mode changed to 644
+[2021-02-10T07:34:18+00:00] INFO: template[/etc/zypp/repos.d/SLE-Product-SLES-Updates.repo] sending refresh action to zypper_repository[SLE-Product-SLES-Updates] (immediate)
+[2021-02-10T07:34:18+00:00] INFO: Processing zypper_repository[SLE-Product-SLES-Updates] action refresh (zypper::default line 26)
+[2021-02-10T07:34:18+00:00] INFO: Processing execute[zypper --quiet --non-interactive refresh --force SLE-Product-SLES-Updates] action run (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 61)
+[2021-02-10T07:34:18+00:00] INFO: Processing execute[Guard resource] action run (dynamically defined)
+[2021-02-10T07:34:18+00:00] INFO: execute[Guard resource] ran successfully
+[2021-02-10T07:34:22+00:00] INFO: execute[zypper --quiet --non-interactive refresh --force SLE-Product-SLES-Updates] ran successfully
+[2021-02-10T07:34:22+00:00] INFO: Processing zypper_repository[SLE-Product-SLES-Updates] action refresh (zypper::default line 26)
+[2021-02-10T07:34:22+00:00] INFO: Processing execute[zypper --quiet --non-interactive refresh --force SLE-Product-SLES-Updates] action run (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 61)
+[2021-02-10T07:34:22+00:00] INFO: Processing execute[Guard resource] action run (dynamically defined)
+[2021-02-10T07:34:22+00:00] INFO: execute[Guard resource] ran successfully
+[2021-02-10T07:34:25+00:00] INFO: execute[zypper --quiet --non-interactive refresh --force SLE-Product-SLES-Updates] ran successfully
+[2021-02-10T07:34:25+00:00] INFO: Processing zypper_repository[SAP-Cloud] action add (zypper::default line 26)
+[2021-02-10T07:34:25+00:00] INFO: Processing template[/etc/zypp/repos.d/SAP-Cloud.repo] action create (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 40)
+[2021-02-10T07:34:25+00:00] INFO: template[/etc/zypp/repos.d/SAP-Cloud.repo] created file /etc/zypp/repos.d/SAP-Cloud.repo
+[2021-02-10T07:34:25+00:00] INFO: template[/etc/zypp/repos.d/SAP-Cloud.repo] updated file contents /etc/zypp/repos.d/SAP-Cloud.repo
+[2021-02-10T07:34:25+00:00] INFO: template[/etc/zypp/repos.d/SAP-Cloud.repo] mode changed to 644
+[2021-02-10T07:34:25+00:00] INFO: template[/etc/zypp/repos.d/SAP-Cloud.repo] sending refresh action to zypper_repository[SAP-Cloud] (immediate)
+[2021-02-10T07:34:25+00:00] INFO: Processing zypper_repository[SAP-Cloud] action refresh (zypper::default line 26)
+[2021-02-10T07:34:25+00:00] INFO: Processing execute[zypper --quiet --non-interactive refresh --force SAP-Cloud] action run (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 61)
+[2021-02-10T07:34:25+00:00] INFO: Processing execute[Guard resource] action run (dynamically defined)
+[2021-02-10T07:34:25+00:00] INFO: execute[Guard resource] ran successfully
+[2021-02-10T07:34:30+00:00] INFO: execute[zypper --quiet --non-interactive refresh --force SAP-Cloud] ran successfully
+[2021-02-10T07:34:30+00:00] INFO: Processing zypper_repository[SAP-Cloud] action refresh (zypper::default line 26)
+[2021-02-10T07:34:30+00:00] INFO: Processing execute[zypper --quiet --non-interactive refresh --force SAP-Cloud] action run (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 61)
+[2021-02-10T07:34:30+00:00] INFO: Processing execute[Guard resource] action run (dynamically defined)
+[2021-02-10T07:34:30+00:00] INFO: execute[Guard resource] ran successfully
+[2021-02-10T07:34:34+00:00] INFO: execute[zypper --quiet --non-interactive refresh --force SAP-Cloud] ran successfully
+[2021-02-10T07:34:34+00:00] INFO: Processing zypper_repository[SAP-Cloud-CC] action add (zypper::default line 26)
+[2021-02-10T07:34:34+00:00] INFO: Processing template[/etc/zypp/repos.d/SAP-Cloud-CC.repo] action create (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 40)
+[2021-02-10T07:34:34+00:00] INFO: template[/etc/zypp/repos.d/SAP-Cloud-CC.repo] created file /etc/zypp/repos.d/SAP-Cloud-CC.repo
+[2021-02-10T07:34:34+00:00] INFO: template[/etc/zypp/repos.d/SAP-Cloud-CC.repo] updated file contents /etc/zypp/repos.d/SAP-Cloud-CC.repo
+[2021-02-10T07:34:34+00:00] INFO: template[/etc/zypp/repos.d/SAP-Cloud-CC.repo] mode changed to 644
+[2021-02-10T07:34:34+00:00] INFO: template[/etc/zypp/repos.d/SAP-Cloud-CC.repo] sending refresh action to zypper_repository[SAP-Cloud-CC] (immediate)
+[2021-02-10T07:34:34+00:00] INFO: Processing zypper_repository[SAP-Cloud-CC] action refresh (zypper::default line 26)
+[2021-02-10T07:34:34+00:00] INFO: Processing execute[zypper --quiet --non-interactive refresh --force SAP-Cloud-CC] action run (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 61)
+[2021-02-10T07:34:34+00:00] INFO: Processing execute[Guard resource] action run (dynamically defined)
+[2021-02-10T07:34:34+00:00] INFO: execute[Guard resource] ran successfully
+[2021-02-10T07:34:37+00:00] INFO: execute[zypper --quiet --non-interactive refresh --force SAP-Cloud-CC] ran successfully
+[2021-02-10T07:34:37+00:00] INFO: Processing zypper_repository[SAP-Cloud-CC] action refresh (zypper::default line 26)
+[2021-02-10T07:34:37+00:00] INFO: Processing execute[zypper --quiet --non-interactive refresh --force SAP-Cloud-CC] action run (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 61)
+[2021-02-10T07:34:37+00:00] INFO: Processing execute[Guard resource] action run (dynamically defined)
+[2021-02-10T07:34:37+00:00] INFO: execute[Guard resource] ran successfully
+[2021-02-10T07:34:41+00:00] INFO: execute[zypper --quiet --non-interactive refresh --force SAP-Cloud-CC] ran successfully
+[2021-02-10T07:34:41+00:00] INFO: Processing zypper_repository[SLE-Module-Python2] action add (zypper::default line 26)
+[2021-02-10T07:34:41+00:00] INFO: Processing template[/etc/zypp/repos.d/SLE-Module-Python2.repo] action create (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 40)
+[2021-02-10T07:34:41+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Python2.repo] created file /etc/zypp/repos.d/SLE-Module-Python2.repo
+[2021-02-10T07:34:41+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Python2.repo] updated file contents /etc/zypp/repos.d/SLE-Module-Python2.repo
+[2021-02-10T07:34:42+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Python2.repo] mode changed to 644
+[2021-02-10T07:34:42+00:00] INFO: template[/etc/zypp/repos.d/SLE-Module-Python2.repo] sending refresh action to zypper_repository[SLE-Module-Python2] (immediate)
+[2021-02-10T07:34:42+00:00] INFO: Processing zypper_repository[SLE-Module-Python2] action refresh (zypper::default line 26)
+[2021-02-10T07:34:42+00:00] INFO: Processing execute[zypper --quiet --non-interactive refresh --force SLE-Module-Python2] action run (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 61)
+[2021-02-10T07:34:42+00:00] INFO: Processing execute[Guard resource] action run (dynamically defined)
+[2021-02-10T07:34:42+00:00] INFO: execute[Guard resource] ran successfully
+[2021-02-10T07:34:45+00:00] INFO: execute[zypper --quiet --non-interactive refresh --force SLE-Module-Python2] ran successfully
+[2021-02-10T07:34:45+00:00] INFO: Processing zypper_repository[SLE-Module-Python2] action refresh (zypper::default line 26)
+[2021-02-10T07:34:45+00:00] INFO: Processing execute[zypper --quiet --non-interactive refresh --force SLE-Module-Python2] action run (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 61)
+[2021-02-10T07:34:45+00:00] INFO: Processing execute[Guard resource] action run (dynamically defined)
+[2021-02-10T07:34:45+00:00] INFO: execute[Guard resource] ran successfully
+[2021-02-10T07:34:49+00:00] INFO: execute[zypper --quiet --non-interactive refresh --force SLE-Module-Python2] ran successfully
+[2021-02-10T07:34:49+00:00] INFO: Processing zypper_repo[refresh all repos] action refresh_all (zypper::default line 36)
+[2021-02-10T07:34:49+00:00] INFO: Processing execute[zypper --quiet --non-interactive --gpg-auto-import-keys refresh --force] action run (/var/cache/chef/cookbooks/zypper/providers/repo.rb line 5)
+[2021-02-10T07:35:59+00:00] INFO: execute[zypper --quiet --non-interactive --gpg-auto-import-keys refresh --force] ran successfully
+[2021-02-10T07:35:59+00:00] INFO: Processing script[Removal of SLES12 Repositories] action run (s4h_server::repo-removal-s12 line 10)
+[2021-02-10T07:36:06+00:00] INFO: script[Removal of SLES12 Repositories] ran successfully
+[2021-02-10T07:36:07+00:00] INFO: Processing template[/etc/bash.bashrc] action create (cc_s4h_server::etc_bash_rc line 12)
+[2021-02-10T07:36:07+00:00] INFO: template[/etc/bash.bashrc] backed up to /var/backups/chef/etc/bash.bashrc.chef-20210210073607.015059
+[2021-02-10T07:36:07+00:00] INFO: template[/etc/bash.bashrc] updated file contents /etc/bash.bashrc
+[2021-02-10T07:36:08+00:00] INFO: Processing script[set s bit ping] action run (cc_s4h_server::ping_sbit line 12)
+[2021-02-10T07:36:08+00:00] INFO: script[set s bit ping] ran successfully
+[2021-02-10T07:36:08+00:00] INFO: Processing file[/root/.ssh/authorized_keys] action delete (cc_s4h_server::root_authorized_key line 12)
+[2021-02-10T07:36:08+00:00] INFO: file[/root/.ssh/authorized_keys] backed up to /var/backups/chef/root/.ssh/authorized_keys.chef-20210210073608.315668
+[2021-02-10T07:36:08+00:00] INFO: file[/root/.ssh/authorized_keys] deleted file at /root/.ssh/authorized_keys
+[2021-02-10T07:36:08+00:00] INFO: Processing zypper_package[uuidd] action install (cc_s4h_server::uuidd line 12)
+[2021-02-10T07:36:13+00:00] INFO: zypper_package[uuidd] installed uuidd at 2.33.1-4.13.2
+[2021-02-10T07:36:13+00:00] INFO: Processing service[uuidd] action enable (cc_s4h_server::uuidd line 16)
+[2021-02-10T07:36:13+00:00] INFO: Processing service[uuidd] action start (cc_s4h_server::uuidd line 16)
+[2021-02-10T07:36:13+00:00] INFO: service[uuidd] started
+[2021-02-10T07:36:13+00:00] INFO: Processing script[install and configure mcafee] action run (cc_s4h_server::cc_mcafee line 9)
+[2021-02-10T07:36:32+00:00] INFO: script[install and configure mcafee] ran successfully
+[2021-02-10T07:36:32+00:00] INFO: Processing zypper_package[chrony] action install (cc_s4h_server::chrony line 19)
+[2021-02-10T07:36:39+00:00] INFO: zypper_package[chrony] installed chrony at 3.2-9.18.1
+[2021-02-10T07:36:39+00:00] INFO: Processing zypper_package[libfreebl3] action install (cc_s4h_server::chrony line 19)
+[2021-02-10T07:36:41+00:00] INFO: Processing template[/etc/chrony.conf] action create (cc_s4h_server::chrony line 25)
+[2021-02-10T07:36:41+00:00] INFO: template[/etc/chrony.conf] backed up to /var/backups/chef/etc/chrony.conf.chef-20210210073641.288818
+[2021-02-10T07:36:41+00:00] INFO: template[/etc/chrony.conf] updated file contents /etc/chrony.conf
+[2021-02-10T07:36:41+00:00] INFO: template[/etc/chrony.conf] group changed to 0
+[2021-02-10T07:36:41+00:00] INFO: Processing template[/etc/sysconfig/chronyd] action create (cc_s4h_server::chrony line 33)
+[2021-02-10T07:36:41+00:00] INFO: template[/etc/sysconfig/chronyd] backed up to /var/backups/chef/etc/sysconfig/chronyd.chef-20210210073641.381553
+[2021-02-10T07:36:41+00:00] INFO: template[/etc/sysconfig/chronyd] updated file contents /etc/sysconfig/chronyd
+[2021-02-10T07:36:41+00:00] INFO: template[/etc/sysconfig/chronyd] not queuing delayed action restart on service[chronyd] (delayed), as it's already been queued
+[2021-02-10T07:36:41+00:00] INFO: Processing service[chronyd] action enable (cc_s4h_server::chrony line 41)
+[2021-02-10T07:36:41+00:00] INFO: service[chronyd] enabled
+[2021-02-10T07:36:41+00:00] INFO: Processing service[chronyd] action start (cc_s4h_server::chrony line 41)
+[2021-02-10T07:36:41+00:00] INFO: service[chronyd] started
+[2021-02-10T07:36:42+00:00] INFO: Processing zypper_package[pam] action install (auth::pam line 12)
+[2021-02-10T07:36:43+00:00] INFO: Processing zypper_package[pam-modules] action install (auth::pam line 12)
+[2021-02-10T07:36:47+00:00] INFO: zypper_package[pam-modules] installed pam-modules at 12.1-3.17
+[2021-02-10T07:36:47+00:00] INFO: Processing zypper_package[pam_ssh] action install (auth::pam line 12)
+[2021-02-10T07:36:51+00:00] INFO: zypper_package[pam_ssh] installed pam_ssh at 2.1-2.27
+[2021-02-10T07:36:51+00:00] INFO: Processing template[/opt/imal/bin/sap-mkhomedir.sh] action create (auth::pam line 19)
+[2021-02-10T07:36:51+00:00] INFO: template[/opt/imal/bin/sap-mkhomedir.sh] created file /opt/imal/bin/sap-mkhomedir.sh
+[2021-02-10T07:36:51+00:00] INFO: template[/opt/imal/bin/sap-mkhomedir.sh] updated file contents /opt/imal/bin/sap-mkhomedir.sh
+[2021-02-10T07:36:51+00:00] INFO: template[/opt/imal/bin/sap-mkhomedir.sh] owner changed to 0
+[2021-02-10T07:36:51+00:00] INFO: template[/opt/imal/bin/sap-mkhomedir.sh] group changed to 0
+[2021-02-10T07:36:51+00:00] INFO: template[/opt/imal/bin/sap-mkhomedir.sh] mode changed to 700
+[2021-02-10T07:36:51+00:00] INFO: Processing template[/etc/pam.d/su] action create (auth::pam line 27)
+[2021-02-10T07:36:51+00:00] INFO: template[/etc/pam.d/su] backed up to /var/backups/chef/etc/pam.d/su.chef-20210210073651.356955
+[2021-02-10T07:36:51+00:00] INFO: template[/etc/pam.d/su] updated file contents /etc/pam.d/su
+[2021-02-10T07:36:51+00:00] INFO: Processing template[/etc/pam.d/su-l] action create (auth::pam line 34)
+[2021-02-10T07:36:51+00:00] INFO: template[/etc/pam.d/su-l] backed up to /var/backups/chef/etc/pam.d/su-l.chef-20210210073651.360599
+[2021-02-10T07:36:51+00:00] INFO: template[/etc/pam.d/su-l] updated file contents /etc/pam.d/su-l
+[2021-02-10T07:36:51+00:00] INFO: Processing template[/etc/pam.d/sudo] action create (auth::pam line 41)
+[2021-02-10T07:36:51+00:00] INFO: template[/etc/pam.d/sudo] backed up to /var/backups/chef/etc/pam.d/sudo.chef-20210210073651.364017
+[2021-02-10T07:36:51+00:00] INFO: template[/etc/pam.d/sudo] updated file contents /etc/pam.d/sudo
+[2021-02-10T07:36:51+00:00] INFO: Processing template[/etc/pam.d/common-account-pc] action create (auth::pam_common line 10)
+[2021-02-10T07:36:51+00:00] INFO: template[/etc/pam.d/common-account-pc] backed up to /var/backups/chef/etc/pam.d/common-account-pc.chef-20210210073651.368094
+[2021-02-10T07:36:51+00:00] INFO: template[/etc/pam.d/common-account-pc] updated file contents /etc/pam.d/common-account-pc
+[2021-02-10T07:36:51+00:00] INFO: Processing template[/etc/pam.d/common-auth-pc] action create (auth::pam_common line 17)
+[2021-02-10T07:36:51+00:00] INFO: template[/etc/pam.d/common-auth-pc] backed up to /var/backups/chef/etc/pam.d/common-auth-pc.chef-20210210073651.371647
+[2021-02-10T07:36:51+00:00] INFO: template[/etc/pam.d/common-auth-pc] updated file contents /etc/pam.d/common-auth-pc
+[2021-02-10T07:36:51+00:00] INFO: Processing template[/etc/pam.d/common-password-pc] action create (auth::pam_common line 24)
+[2021-02-10T07:36:51+00:00] INFO: template[/etc/pam.d/common-password-pc] backed up to /var/backups/chef/etc/pam.d/common-password-pc.chef-20210210073651.374994
+[2021-02-10T07:36:51+00:00] INFO: template[/etc/pam.d/common-password-pc] updated file contents /etc/pam.d/common-password-pc
+[2021-02-10T07:36:51+00:00] INFO: Processing template[/etc/pam.d/common-session-pc] action create (auth::pam_common line 31)
+[2021-02-10T07:36:51+00:00] INFO: template[/etc/pam.d/common-session-pc] backed up to /var/backups/chef/etc/pam.d/common-session-pc.chef-20210210073651.378412
+[2021-02-10T07:36:51+00:00] INFO: template[/etc/pam.d/common-session-pc] updated file contents /etc/pam.d/common-session-pc
+[2021-02-10T07:36:51+00:00] INFO: Processing template[/etc/security/access.conf] action create (auth::accessconf line 9)
+[2021-02-10T07:36:51+00:00] INFO: template[/etc/security/access.conf] backed up to /var/backups/chef/etc/security/access.conf.chef-20210210073651.867097
+[2021-02-10T07:36:51+00:00] INFO: template[/etc/security/access.conf] updated file contents /etc/security/access.conf
+[2021-02-10T07:36:51+00:00] INFO: Processing zypper_package[openldap2] action remove (auth::sssd line 12)
+[2021-02-10T07:36:53+00:00] INFO: Processing zypper_package[cyrus-sasl-saslauthd] action remove (auth::sssd line 19)
+[2021-02-10T07:36:55+00:00] INFO: Processing zypper_package[sssd] action install (auth::sssd line 26)
+[2021-02-10T07:36:56+00:00] INFO: Processing zypper_package[sap-global-cacerts] action install (auth::sssd line 32)
+[2021-02-10T07:36:58+00:00] INFO: Processing template[/etc/sssd/sssd.conf] action create (auth::sssd line 48)
+[2021-02-10T07:36:58+00:00] INFO: template[/etc/sssd/sssd.conf] backed up to /var/backups/chef/etc/sssd/sssd.conf.chef-20210210073658.362099
+[2021-02-10T07:36:58+00:00] INFO: template[/etc/sssd/sssd.conf] updated file contents /etc/sssd/sssd.conf
+[2021-02-10T07:36:58+00:00] INFO: Processing zypper_package[nscd] action remove (auth::sssd line 75)
+[2021-02-10T07:37:00+00:00] INFO: Processing service[sssd] action enable (auth::sssd line 79)
+[2021-02-10T07:37:00+00:00] INFO: service[sssd] enabled
+[2021-02-10T07:37:00+00:00] INFO: Processing service[sssd] action start (auth::sssd line 79)
+[2021-02-10T07:37:01+00:00] INFO: service[sssd] started
+[2021-02-10T07:37:01+00:00] INFO: Processing zypper_package[openssh] action install (auth::sshd line 12)
+[2021-02-10T07:37:02+00:00] INFO: Processing service[sshd] action enable (auth::sshd line 17)
+[2021-02-10T07:37:03+00:00] INFO: Processing template[/etc/ssh/sshd_config] action create (auth::sshd line 21)
+[2021-02-10T07:37:03+00:00] INFO: template[/etc/ssh/sshd_config] backed up to /var/backups/chef/etc/ssh/sshd_config.chef-20210210073703.052407
+[2021-02-10T07:37:03+00:00] INFO: template[/etc/ssh/sshd_config] updated file contents /etc/ssh/sshd_config
+[2021-02-10T07:37:03+00:00] INFO: template[/etc/ssh/sshd_config] mode changed to 640
+[2021-02-10T07:37:03+00:00] INFO: Processing template[/etc/ssh_banner] action create (auth::sshd line 29)
+[2021-02-10T07:37:03+00:00] INFO: template[/etc/ssh_banner] created file /etc/ssh_banner
+[2021-02-10T07:37:03+00:00] INFO: template[/etc/ssh_banner] updated file contents /etc/ssh_banner
+[2021-02-10T07:37:03+00:00] INFO: template[/etc/ssh_banner] owner changed to 0
+[2021-02-10T07:37:03+00:00] INFO: template[/etc/ssh_banner] group changed to 0
+[2021-02-10T07:37:03+00:00] INFO: template[/etc/ssh_banner] mode changed to 644
+[2021-02-10T07:37:03+00:00] INFO: template[/etc/ssh_banner] not queuing delayed action restart on service[sshd] (delayed), as it's already been queued
+[2021-02-10T07:37:03+00:00] INFO: Processing service[sshd] action start (auth::sshd line 37)
+[2021-02-10T07:37:03+00:00] INFO: Processing zypper_package[openssh] action install (auth::ssh line 9)
+[2021-02-10T07:37:05+00:00] INFO: Processing template[/etc/ssh/ssh_config] action create (auth::ssh line 13)
+[2021-02-10T07:37:05+00:00] INFO: template[/etc/ssh/ssh_config] backed up to /var/backups/chef/etc/ssh/ssh_config.chef-20210210073705.191267
+[2021-02-10T07:37:05+00:00] INFO: template[/etc/ssh/ssh_config] updated file contents /etc/ssh/ssh_config
+[2021-02-10T07:37:05+00:00] INFO: Processing zypper_package[sudosh2] action install (auth::sudosh line 9)
+[2021-02-10T07:37:05+00:00] INFO: Processing template[/etc/security/limits.conf] action create (auth::limits line 9)
+[2021-02-10T07:37:05+00:00] INFO: template[/etc/security/limits.conf] backed up to /var/backups/chef/etc/security/limits.conf.chef-20210210073705.498382
+[2021-02-10T07:37:05+00:00] INFO: template[/etc/security/limits.conf] updated file contents /etc/security/limits.conf
+[2021-02-10T07:37:05+00:00] INFO: Processing zypper_package[expect] action install (cc_s4h_server::add_packages line 10)
+[2021-02-10T07:37:10+00:00] INFO: zypper_package[expect] installed expect at 5.45.3-1.63
+[2021-02-10T07:37:10+00:00] INFO: Processing zypper_package[tcsh] action install (cc_s4h_server::add_packages line 14)
+[2021-02-10T07:37:11+00:00] INFO: Processing service[cron start] action restart (cc_s4h_server::add_packages line 19)
+[2021-02-10T07:37:11+00:00] INFO: service[cron start] restarted
+[2021-02-10T07:37:12+00:00] INFO: Processing script[Change of Kernel Parameter] action run (cc_s4h_server::add_packages line 24)
+[2021-02-10T07:37:12+00:00] INFO: script[Change of Kernel Parameter] ran successfully
+[2021-02-10T07:37:12+00:00] INFO: Processing zypper_package[insserv-compat] action install (cc_s4h_server::add_packages line 38)
+[2021-02-10T07:37:15+00:00] INFO: zypper_package[insserv-compat] installed insserv-compat at 0.1-4.3.1
+[2021-02-10T07:37:15+00:00] INFO: Processing zypper_package[supportutils] action install (cc_s4h_server::add_packages line 38)
+[2021-02-10T07:37:20+00:00] INFO: zypper_package[supportutils] installed supportutils at 3.1.9-5.24.3
+[2021-02-10T07:37:20+00:00] INFO: Processing zypper_package[libatomic1] action install (cc_s4h_server::add_packages line 38)
+[2021-02-10T07:37:23+00:00] INFO: zypper_package[libatomic1] installed libatomic1 at 10.2.1+git583-1.3.4
+[2021-02-10T07:37:23+00:00] INFO: Processing script[CHEF recommended configuration ] action run (cc_s4h_server::add_packages line 53)
+[2021-02-10T07:37:23+00:00] INFO: script[CHEF recommended configuration ] ran successfully
+[2021-02-10T07:37:23+00:00] INFO: Processing script[Performnace script] action run (cc_s4h_server::add_packages line 87)
+[2021-02-10T07:37:24+00:00] INFO: script[Performnace script] ran successfully
+[2021-02-10T07:37:24+00:00] INFO: Processing script[Python2 Installation for SLES15] action run (cc_s4h_server::add_packages line 96)
+[2021-02-10T07:37:28+00:00] INFO: script[Python2 Installation for SLES15] ran successfully
+[2021-02-10T07:37:28+00:00] INFO: Processing script[LOAD Secondary LDAP Groups to cache] action run (cc_s4h_server::add_packages line 105)
+[2021-02-10T07:37:28+00:00] INFO: script[LOAD Secondary LDAP Groups to cache] ran successfully
+[2021-02-10T07:37:28+00:00] INFO: Processing script[SUDOSH Enablement for SLES15 VMS/BMS] action run (cc_s4h_server::add_packages line 115)
+[2021-02-10T07:37:30+00:00] INFO: script[SUDOSH Enablement for SLES15 VMS/BMS] ran successfully
+[2021-02-10T07:37:30+00:00] INFO: Processing zypper_package[perl-os-library] action install (cc_s4h_server::virtualip line 12)
+[2021-02-10T07:37:31+00:00] INFO: Processing service[virtualip] action enable (cc_s4h_server::virtualip line 16)
+[2021-02-10T07:37:32+00:00] INFO: service[virtualip] enabled
+[2021-02-10T07:37:32+00:00] INFO: Processing service[virtualip] action start (cc_s4h_server::virtualip line 16)
+[2021-02-10T07:37:32+00:00] INFO: Processing script[chkconfig enable] action run (cc_s4h_server::virtualip line 21)
+[2021-02-10T07:37:32+00:00] INFO: script[chkconfig enable] ran successfully
+[2021-02-10T07:37:32+00:00] INFO: Processing template[/etc/default/grub] action create (bootloader::grub2 line 10)
+[2021-02-10T07:37:32+00:00] INFO: template[/etc/default/grub] backed up to /var/backups/chef/etc/default/grub.chef-20210210073732.459084
+[2021-02-10T07:37:32+00:00] INFO: template[/etc/default/grub] updated file contents /etc/default/grub
+[2021-02-10T07:37:32+00:00] INFO: template[/etc/default/grub] sending run action to execute[grub2-mkconfig] (immediate)
+[2021-02-10T07:37:32+00:00] INFO: Processing execute[grub2-mkconfig] action run (bootloader::grub2 line 35)
+[2021-02-10T07:37:34+00:00] INFO: execute[grub2-mkconfig] ran successfully
+[2021-02-10T07:37:34+00:00] INFO: Processing template[/etc/sysconfig/bootloader] action create (bootloader::grub2 line 27)
+[2021-02-10T07:37:34+00:00] INFO: template[/etc/sysconfig/bootloader] backed up to /var/backups/chef/etc/sysconfig/bootloader.chef-20210210073734.319126
+[2021-02-10T07:37:34+00:00] INFO: template[/etc/sysconfig/bootloader] updated file contents /etc/sysconfig/bootloader
+[2021-02-10T07:37:34+00:00] INFO: template[/etc/sysconfig/bootloader] sending run action to execute[grub2-mkconfig] (immediate)
+[2021-02-10T07:37:34+00:00] INFO: Processing execute[grub2-mkconfig] action run (bootloader::grub2 line 35)
+[2021-02-10T07:37:36+00:00] INFO: execute[grub2-mkconfig] ran successfully
+[2021-02-10T07:37:36+00:00] INFO: Processing execute[grub2-mkconfig] action nothing (bootloader::grub2 line 35)
+[2021-02-10T07:37:36+00:00] INFO: Processing file[/boot/grub2/grub.cfg] action create_if_missing (bootloader::grub2 line 41)
+[2021-02-10T07:37:36+00:00] INFO: Processing template[/etc/rc.d/init.d/procps] action create (sysctl::service line 20)
+[2021-02-10T07:37:36+00:00] INFO: Processing service[procps] action enable (sysctl::service line 26)
+[2021-02-10T07:37:36+00:00] INFO: Processing directory[Sysctl config directory] action create (sysctl::default line 24)
+[2021-02-10T07:37:36+00:00] WARN: only_if block for directory[Sysctl config directory] returned "/etc/sysctl.d", did you mean to run a command? If so use 'only_if "/etc/sysctl.d"' in your code.
+[2021-02-10T07:37:36+00:00] INFO: Processing ruby_block[save-sysctl-params] action nothing (sysctl::default line 52)
+[2021-02-10T07:37:36+00:00] INFO: Processing ruby_block[apply-sysctl-params] action nothing (sysctl::default line 60)
+[2021-02-10T07:37:36+00:00] INFO: Processing template[/etc/sysctl.d/99-chef-attributes.conf] action nothing (sysctl::default line 70)
+[2021-02-10T07:37:36+00:00] INFO: Processing ruby_block[notify-apply-sysctl-params] action run (sysctl::apply line 22)
+[2021-02-10T07:37:36+00:00] INFO: ruby_block[notify-apply-sysctl-params] called
+[2021-02-10T07:37:36+00:00] INFO: ruby_block[notify-apply-sysctl-params] sending run action to ruby_block[apply-sysctl-params] (immediate)
+[2021-02-10T07:37:36+00:00] INFO: Processing ruby_block[apply-sysctl-params] action run (sysctl::default line 60)
+[2021-02-10T07:37:36+00:00] INFO: ruby_block[apply-sysctl-params] called
+[2021-02-10T07:37:36+00:00] INFO: ruby_block[apply-sysctl-params] sending create action to template[/etc/sysctl.d/99-chef-attributes.conf] (immediate)
+[2021-02-10T07:37:36+00:00] INFO: Processing template[/etc/sysctl.d/99-chef-attributes.conf] action create (sysctl::default line 70)
+[2021-02-10T07:37:36+00:00] INFO: template[/etc/sysctl.d/99-chef-attributes.conf] created file /etc/sysctl.d/99-chef-attributes.conf
+[2021-02-10T07:37:36+00:00] INFO: template[/etc/sysctl.d/99-chef-attributes.conf] updated file contents /etc/sysctl.d/99-chef-attributes.conf
+[2021-02-10T07:37:36+00:00] INFO: template[/etc/sysctl.d/99-chef-attributes.conf] mode changed to 644
+[2021-02-10T07:37:36+00:00] INFO: template[/etc/sysctl.d/99-chef-attributes.conf] sending restart action to service[procps] (immediate)
+[2021-02-10T07:37:36+00:00] INFO: Processing service[procps] action restart (sysctl::service line 26)
+[2021-02-10T07:37:36+00:00] INFO: service[procps] restarted
+[2021-02-10T07:37:36+00:00] INFO: Processing template[/etc/modprobe.d/zzz_sunrpc.conf] action create (kernel::default line 11)
+[2021-02-10T07:37:36+00:00] INFO: template[/etc/modprobe.d/zzz_sunrpc.conf] created file /etc/modprobe.d/zzz_sunrpc.conf
+[2021-02-10T07:37:36+00:00] INFO: template[/etc/modprobe.d/zzz_sunrpc.conf] updated file contents /etc/modprobe.d/zzz_sunrpc.conf
+[2021-02-10T07:37:36+00:00] INFO: template[/etc/modprobe.d/zzz_sunrpc.conf] owner changed to 0
+[2021-02-10T07:37:36+00:00] INFO: template[/etc/modprobe.d/zzz_sunrpc.conf] group changed to 0
+[2021-02-10T07:37:36+00:00] INFO: template[/etc/modprobe.d/zzz_sunrpc.conf] mode changed to 640
+[2021-02-10T07:37:36+00:00] INFO: Processing script[Mutipath removal and Kernel Update for SLES] action run (cc_s4h_server::kernel line 8)
+[2021-02-10T07:40:18+00:00] INFO: script[Mutipath removal and Kernel Update for SLES] ran successfully
+[2021-02-10T07:40:18+00:00] INFO: Processing script[Setup of Runlevel-3 in SLES15] action run (cc_s4h_server::kernel line 17)
+[2021-02-10T07:40:18+00:00] INFO: script[Setup of Runlevel-3 in SLES15] ran successfully
+[2021-02-10T07:40:18+00:00] INFO: Processing script[Kdump configuration enablement for VMS] action run (s4h_server::kdump line 9)
+[2021-02-10T07:40:19+00:00] INFO: script[Kdump configuration enablement for VMS] ran successfully
+[2021-02-10T07:40:19+00:00] INFO: Processing template[/etc/systemd/journald.conf] action create (log::journald line 9)
+[2021-02-10T07:40:19+00:00] INFO: template[/etc/systemd/journald.conf] backed up to /var/backups/chef/etc/systemd/journald.conf.chef-20210210074019.346646
+[2021-02-10T07:40:19+00:00] INFO: template[/etc/systemd/journald.conf] updated file contents /etc/systemd/journald.conf
+[2021-02-10T07:40:19+00:00] INFO: Processing zypper_package[logrotate] action install (log::logrotate line 9)
+[2021-02-10T07:40:20+00:00] INFO: Processing template[/etc/logrotate.conf] action create (log::logrotate line 13)
+[2021-02-10T07:40:20+00:00] INFO: template[/etc/logrotate.conf] backed up to /var/backups/chef/etc/logrotate.conf.chef-20210210074020.951277
+[2021-02-10T07:40:20+00:00] INFO: template[/etc/logrotate.conf] updated file contents /etc/logrotate.conf
+[2021-02-10T07:40:20+00:00] INFO: Processing template[/etc/logrotate.d/syslog] action create (log::logrotate line 20)
+[2021-02-10T07:40:20+00:00] INFO: template[/etc/logrotate.d/syslog] backed up to /var/backups/chef/etc/logrotate.d/syslog.chef-20210210074020.983131
+[2021-02-10T07:40:20+00:00] INFO: template[/etc/logrotate.d/syslog] updated file contents /etc/logrotate.d/syslog
+[2021-02-10T07:40:20+00:00] INFO: Processing service[logrotate.timer] action enable (log::logrotate line 29)
+[2021-02-10T07:40:21+00:00] INFO: Processing zypper_package[rsyslog] action install (log::rsyslog line 9)
+[2021-02-10T07:40:22+00:00] INFO: Processing service[rsyslog] action enable (log::rsyslog line 13)
+[2021-02-10T07:40:22+00:00] INFO: Processing template[/etc/rsyslog.conf] action create (log::rsyslog line 18)
+[2021-02-10T07:40:22+00:00] INFO: template[/etc/rsyslog.conf] backed up to /var/backups/chef/etc/rsyslog.conf.chef-20210210074022.710935
+[2021-02-10T07:40:22+00:00] INFO: template[/etc/rsyslog.conf] updated file contents /etc/rsyslog.conf
+[2021-02-10T07:40:22+00:00] INFO: Processing template[/etc/rsyslog.d/hec.conf] action create (log::rsyslog line 28)
+[2021-02-10T07:40:22+00:00] INFO: Processing template[/etc/rsyslog.d/loggingTemplate.conf] action create (log::rsyslog line 37)
+[2021-02-10T07:40:22+00:00] INFO: template[/etc/rsyslog.d/loggingTemplate.conf] created file /etc/rsyslog.d/loggingTemplate.conf
+[2021-02-10T07:40:22+00:00] INFO: template[/etc/rsyslog.d/loggingTemplate.conf] updated file contents /etc/rsyslog.d/loggingTemplate.conf
+[2021-02-10T07:40:22+00:00] INFO: template[/etc/rsyslog.d/loggingTemplate.conf] owner changed to 0
+[2021-02-10T07:40:22+00:00] INFO: template[/etc/rsyslog.d/loggingTemplate.conf] group changed to 0
+[2021-02-10T07:40:22+00:00] INFO: template[/etc/rsyslog.d/loggingTemplate.conf] mode changed to 600
+[2021-02-10T07:40:22+00:00] INFO: template[/etc/rsyslog.d/loggingTemplate.conf] not queuing delayed action restart on service[rsyslog] (delayed), as it's already been queued
+[2021-02-10T07:40:22+00:00] INFO: Processing template[/etc/logrotate.d/syslog] action create (cc_s4h_server::logrotate line 10)
+[2021-02-10T07:40:22+00:00] INFO: template[/etc/logrotate.d/syslog] backed up to /var/backups/chef/etc/logrotate.d/syslog.chef-20210210074022.970563
+[2021-02-10T07:40:22+00:00] INFO: template[/etc/logrotate.d/syslog] updated file contents /etc/logrotate.d/syslog
+[2021-02-10T07:40:22+00:00] INFO: Processing zypper_package[postfix] action install (mta::postfix line 9)
+[2021-02-10T07:40:24+00:00] INFO: Processing service[postfix] action enable (mta::postfix line 13)
+[2021-02-10T07:40:25+00:00] INFO: service[postfix] enabled
+[2021-02-10T07:40:25+00:00] INFO: Processing template[/etc/sysconfig/postfix] action create (mta::postfix line 17)
+[2021-02-10T07:40:25+00:00] INFO: template[/etc/sysconfig/postfix] backed up to /var/backups/chef/etc/sysconfig/postfix.chef-20210210074025.330136
+[2021-02-10T07:40:25+00:00] INFO: template[/etc/sysconfig/postfix] updated file contents /etc/sysconfig/postfix
+[2021-02-10T07:40:25+00:00] INFO: Processing template[/etc/postfix/main.cf] action create (mta::postfix line 25)
+[2021-02-10T07:40:25+00:00] INFO: template[/etc/postfix/main.cf] backed up to /var/backups/chef/etc/postfix/main.cf.chef-20210210074025.838813
+[2021-02-10T07:40:25+00:00] INFO: template[/etc/postfix/main.cf] updated file contents /etc/postfix/main.cf
+[2021-02-10T07:40:26+00:00] INFO: template[/etc/postfix/main.cf] not queuing delayed action restart on service[postfix] (delayed), as it's already been queued
+[2021-02-10T07:40:26+00:00] INFO: template[/etc/postfix/main.cf] not queuing delayed action restart on service[postfix] (delayed), as it's already been queued
+[2021-02-10T07:40:26+00:00] INFO: Processing service[postfix] action start (mta::postfix line 33)
+[2021-02-10T07:40:27+00:00] INFO: service[postfix] started
+[2021-02-10T07:40:27+00:00] INFO: Processing zypper_package[cyrus-sasl-crammd5] action install (mta::smtp_auth line 10)
+[2021-02-10T07:40:32+00:00] INFO: zypper_package[cyrus-sasl-crammd5] installed cyrus-sasl-crammd5 at 2.1.26-5.7.1
+[2021-02-10T07:40:32+00:00] INFO: Processing template[/etc/postfix/main.cf] action create (mta::smtp_auth line 14)
+[2021-02-10T07:40:32+00:00] INFO: template[/etc/postfix/main.cf] backed up to /var/backups/chef/etc/postfix/main.cf.chef-20210210074032.349359
+[2021-02-10T07:40:32+00:00] INFO: template[/etc/postfix/main.cf] updated file contents /etc/postfix/main.cf
+[2021-02-10T07:40:32+00:00] INFO: template[/etc/postfix/main.cf] not queuing delayed action restart on service[postfix] (delayed), as it's already been queued
+[2021-02-10T07:40:32+00:00] INFO: template[/etc/postfix/main.cf] not queuing delayed action restart on service[postfix] (delayed), as it's already been queued
+[2021-02-10T07:40:32+00:00] INFO: Processing template[/etc/postfix/sasl_passwd] action create (mta::smtp_auth line 22)
+[2021-02-10T07:40:32+00:00] INFO: template[/etc/postfix/sasl_passwd] backed up to /var/backups/chef/etc/postfix/sasl_passwd.chef-20210210074032.353679
+[2021-02-10T07:40:32+00:00] INFO: template[/etc/postfix/sasl_passwd] updated file contents /etc/postfix/sasl_passwd
+[2021-02-10T07:40:32+00:00] INFO: template[/etc/postfix/sasl_passwd] sending run action to execute[postmap] (immediate)
+[2021-02-10T07:40:32+00:00] INFO: Processing execute[postmap] action run (mta::smtp_auth line 30)
+[2021-02-10T07:40:34+00:00] INFO: execute[postmap] ran successfully
+[2021-02-10T07:40:34+00:00] INFO: execute[postmap] not queuing delayed action restart on service[postfix] (delayed), as it's already been queued
+[2021-02-10T07:40:34+00:00] INFO: Processing execute[postmap] action nothing (mta::smtp_auth line 30)
+[2021-02-10T07:40:34+00:00] INFO: Processing template[/etc/postfix/master.cf] action create (mta::smtp_auth line 36)
+[2021-02-10T07:40:34+00:00] INFO: template[/etc/postfix/master.cf] backed up to /var/backups/chef/etc/postfix/master.cf.chef-20210210074034.506855
+[2021-02-10T07:40:34+00:00] INFO: template[/etc/postfix/master.cf] updated file contents /etc/postfix/master.cf
+[2021-02-10T07:40:34+00:00] INFO: Processing template[/etc/sasl2/smtpd.conf] action create (mta::smtp_auth line 43)
+[2021-02-10T07:40:34+00:00] INFO: template[/etc/sasl2/smtpd.conf] backed up to /var/backups/chef/etc/sasl2/smtpd.conf.chef-20210210074034.512294
+[2021-02-10T07:40:34+00:00] INFO: template[/etc/sasl2/smtpd.conf] updated file contents /etc/sasl2/smtpd.conf
+[2021-02-10T07:40:34+00:00] INFO: template[/etc/sasl2/smtpd.conf] mode changed to 644
+[2021-02-10T07:40:34+00:00] INFO: Processing bash[create_sasldb_user] action run (mta::smtp_auth line 52)
+[2021-02-10T07:40:34+00:00] INFO: bash[create_sasldb_user] ran successfully
+[2021-02-10T07:40:34+00:00] INFO: Processing file[/etc/sasldb2] action create (mta::smtp_auth line 67)
+[2021-02-10T07:40:34+00:00] INFO: file[/etc/sasldb2] group changed to 51
+[2021-02-10T07:40:34+00:00] INFO: Processing service[postfix] action start (mta::smtp_auth line 73)
+[2021-02-10T07:40:34+00:00] INFO: Processing zypper_package[sysstat] action install (sysstat::sysstat line 7)
+[2021-02-10T07:40:40+00:00] INFO: zypper_package[sysstat] installed sysstat at 12.0.2-3.27.1
+[2021-02-10T07:40:40+00:00] INFO: Processing zypper_package[byd-webmin-sysstats] action install (sysstat::sysstat line 11)
+[2021-02-10T07:40:49+00:00] INFO: zypper_package[byd-webmin-sysstats] installed byd-webmin-sysstats at 2.5-7.2.SAP
+[2021-02-10T07:40:49+00:00] INFO: Processing template[/etc/sysstat/sysstat.cron] action create (sysstat::sysstat line 16)
+[2021-02-10T07:40:49+00:00] INFO: template[/etc/sysstat/sysstat.cron] backed up to /var/backups/chef/etc/sysstat/sysstat.cron.chef-20210210074049.809521
+[2021-02-10T07:40:49+00:00] INFO: template[/etc/sysstat/sysstat.cron] updated file contents /etc/sysstat/sysstat.cron
+[2021-02-10T07:40:49+00:00] INFO: Processing template[/etc/sysstat/sysstat] action create (sysstat::sysstat line 23)
+[2021-02-10T07:40:49+00:00] INFO: template[/etc/sysstat/sysstat] backed up to /var/backups/chef/etc/sysstat/sysstat.chef-20210210074049.881249
+[2021-02-10T07:40:49+00:00] INFO: template[/etc/sysstat/sysstat] updated file contents /etc/sysstat/sysstat
+[2021-02-10T07:40:49+00:00] INFO: Processing file[/etc/cron.d/sysstat] action delete (sysstat::sysstat line 30)
+[2021-02-10T07:40:49+00:00] INFO: Processing execute[systemctl-daemon-reload] action nothing (sysstat::timers line 7)
+[2021-02-10T07:40:49+00:00] INFO: Processing template[/etc/systemd/system/sysstat-sa1.timer] action create (sysstat::timers line 12)
+[2021-02-10T07:40:49+00:00] INFO: template[/etc/systemd/system/sysstat-sa1.timer] created file /etc/systemd/system/sysstat-sa1.timer
+[2021-02-10T07:40:49+00:00] INFO: template[/etc/systemd/system/sysstat-sa1.timer] updated file contents /etc/systemd/system/sysstat-sa1.timer
+[2021-02-10T07:40:49+00:00] INFO: template[/etc/systemd/system/sysstat-sa1.timer] owner changed to 0
+[2021-02-10T07:40:49+00:00] INFO: template[/etc/systemd/system/sysstat-sa1.timer] group changed to 0
+[2021-02-10T07:40:49+00:00] INFO: template[/etc/systemd/system/sysstat-sa1.timer] mode changed to 644
+[2021-02-10T07:40:49+00:00] INFO: template[/etc/systemd/system/sysstat-sa1.timer] sending run action to execute[systemctl-daemon-reload] (immediate)
+[2021-02-10T07:40:49+00:00] INFO: Processing execute[systemctl-daemon-reload] action run (sap::clearlogs line 16)
+[2021-02-10T07:40:50+00:00] INFO: execute[systemctl-daemon-reload] ran successfully
+[2021-02-10T07:40:50+00:00] INFO: Processing template[/etc/systemd/system/sysstat-sa1.service] action create (sysstat::timers line 21)
+[2021-02-10T07:40:50+00:00] INFO: template[/etc/systemd/system/sysstat-sa1.service] created file /etc/systemd/system/sysstat-sa1.service
+[2021-02-10T07:40:50+00:00] INFO: template[/etc/systemd/system/sysstat-sa1.service] updated file contents /etc/systemd/system/sysstat-sa1.service
+[2021-02-10T07:40:50+00:00] INFO: template[/etc/systemd/system/sysstat-sa1.service] owner changed to 0
+[2021-02-10T07:40:50+00:00] INFO: template[/etc/systemd/system/sysstat-sa1.service] group changed to 0
+[2021-02-10T07:40:50+00:00] INFO: template[/etc/systemd/system/sysstat-sa1.service] mode changed to 644
+[2021-02-10T07:40:50+00:00] INFO: template[/etc/systemd/system/sysstat-sa1.service] sending run action to execute[systemctl-daemon-reload] (immediate)
+[2021-02-10T07:40:50+00:00] INFO: Processing execute[systemctl-daemon-reload] action run (sap::clearlogs line 16)
+[2021-02-10T07:40:50+00:00] INFO: execute[systemctl-daemon-reload] ran successfully
+[2021-02-10T07:40:50+00:00] INFO: Processing service[sysstat-sa1.timer] action enable (sysstat::timers line 30)
+[2021-02-10T07:40:50+00:00] INFO: service[sysstat-sa1.timer] enabled
+[2021-02-10T07:40:50+00:00] INFO: Processing service[sysstat-sa1.timer] action start (sysstat::timers line 30)
+[2021-02-10T07:40:51+00:00] INFO: service[sysstat-sa1.timer] started
+[2021-02-10T07:40:51+00:00] INFO: Processing template[/etc/systemd/system/sysstat-sa2.timer] action create (sysstat::timers line 36)
+[2021-02-10T07:40:51+00:00] INFO: template[/etc/systemd/system/sysstat-sa2.timer] created file /etc/systemd/system/sysstat-sa2.timer
+[2021-02-10T07:40:51+00:00] INFO: template[/etc/systemd/system/sysstat-sa2.timer] updated file contents /etc/systemd/system/sysstat-sa2.timer
+[2021-02-10T07:40:51+00:00] INFO: template[/etc/systemd/system/sysstat-sa2.timer] owner changed to 0
+[2021-02-10T07:40:51+00:00] INFO: template[/etc/systemd/system/sysstat-sa2.timer] group changed to 0
+[2021-02-10T07:40:51+00:00] INFO: template[/etc/systemd/system/sysstat-sa2.timer] mode changed to 644
+[2021-02-10T07:40:51+00:00] INFO: template[/etc/systemd/system/sysstat-sa2.timer] sending run action to execute[systemctl-daemon-reload] (immediate)
+[2021-02-10T07:40:51+00:00] INFO: Processing execute[systemctl-daemon-reload] action run (sap::clearlogs line 16)
+[2021-02-10T07:40:51+00:00] INFO: execute[systemctl-daemon-reload] ran successfully
+[2021-02-10T07:40:51+00:00] INFO: Processing template[/etc/systemd/system/sysstat-sa2.service] action create (sysstat::timers line 45)
+[2021-02-10T07:40:51+00:00] INFO: template[/etc/systemd/system/sysstat-sa2.service] created file /etc/systemd/system/sysstat-sa2.service
+[2021-02-10T07:40:51+00:00] INFO: template[/etc/systemd/system/sysstat-sa2.service] updated file contents /etc/systemd/system/sysstat-sa2.service
+[2021-02-10T07:40:51+00:00] INFO: template[/etc/systemd/system/sysstat-sa2.service] owner changed to 0
+[2021-02-10T07:40:51+00:00] INFO: template[/etc/systemd/system/sysstat-sa2.service] group changed to 0
+[2021-02-10T07:40:51+00:00] INFO: template[/etc/systemd/system/sysstat-sa2.service] mode changed to 644
+[2021-02-10T07:40:51+00:00] INFO: template[/etc/systemd/system/sysstat-sa2.service] sending run action to execute[systemctl-daemon-reload] (immediate)
+[2021-02-10T07:40:51+00:00] INFO: Processing execute[systemctl-daemon-reload] action run (sap::clearlogs line 16)
+[2021-02-10T07:40:51+00:00] INFO: execute[systemctl-daemon-reload] ran successfully
+[2021-02-10T07:40:51+00:00] INFO: Processing service[sysstat-sa2.timer] action enable (sysstat::timers line 54)
+[2021-02-10T07:40:52+00:00] INFO: service[sysstat-sa2.timer] enabled
+[2021-02-10T07:40:52+00:00] INFO: Processing service[sysstat-sa2.timer] action start (sysstat::timers line 54)
+[2021-02-10T07:40:52+00:00] INFO: service[sysstat-sa2.timer] started
+[2021-02-10T07:40:52+00:00] INFO: Processing template[/etc/securetty] action create (tty::securetty line 9)
+[2021-02-10T07:40:52+00:00] INFO: template[/etc/securetty] backed up to /var/backups/chef/etc/securetty.chef-20210210074052.217552
+[2021-02-10T07:40:52+00:00] INFO: template[/etc/securetty] updated file contents /etc/securetty
+[2021-02-10T07:40:52+00:00] INFO: Processing zypper_package[aaa_base] action install (profile::default line 9)
+[2021-02-10T07:40:53+00:00] INFO: Processing zypper_package[aaa_base-extras] action install (profile::default line 9)
+[2021-02-10T07:40:55+00:00] INFO: Processing template[/etc/profile.local] action create (profile::default line 14)
+[2021-02-10T07:40:55+00:00] INFO: template[/etc/profile.local] created file /etc/profile.local
+[2021-02-10T07:40:55+00:00] INFO: template[/etc/profile.local] updated file contents /etc/profile.local
+[2021-02-10T07:40:55+00:00] INFO: template[/etc/profile.local] owner changed to 0
+[2021-02-10T07:40:55+00:00] INFO: template[/etc/profile.local] group changed to 0
+[2021-02-10T07:40:55+00:00] INFO: template[/etc/profile.local] mode changed to 644
+[2021-02-10T07:40:55+00:00] INFO: Processing template[/etc/locale.conf] action create (profile::default line 25)
+[2021-02-10T07:40:55+00:00] INFO: template[/etc/locale.conf] backed up to /var/backups/chef/etc/locale.conf.chef-20210210074055.345026
+[2021-02-10T07:40:55+00:00] INFO: template[/etc/locale.conf] updated file contents /etc/locale.conf
+[2021-02-10T07:40:55+00:00] INFO: Processing template[/etc/profile.d/zzz-welcomescreen.sh] action create (profile::default line 33)
+[2021-02-10T07:40:55+00:00] INFO: template[/etc/profile.d/zzz-welcomescreen.sh] created file /etc/profile.d/zzz-welcomescreen.sh
+[2021-02-10T07:40:55+00:00] INFO: template[/etc/profile.d/zzz-welcomescreen.sh] updated file contents /etc/profile.d/zzz-welcomescreen.sh
+[2021-02-10T07:40:55+00:00] INFO: template[/etc/profile.d/zzz-welcomescreen.sh] owner changed to 0
+[2021-02-10T07:40:55+00:00] INFO: template[/etc/profile.d/zzz-welcomescreen.sh] group changed to 0
+[2021-02-10T07:40:55+00:00] INFO: template[/etc/profile.d/zzz-welcomescreen.sh] mode changed to 644
+[2021-02-10T07:40:55+00:00] INFO: Processing template[/etc/bash.bashrc.local] action create (profile::default line 41)
+[2021-02-10T07:40:55+00:00] INFO: template[/etc/bash.bashrc.local] created file /etc/bash.bashrc.local
+[2021-02-10T07:40:55+00:00] INFO: template[/etc/bash.bashrc.local] updated file contents /etc/bash.bashrc.local
+[2021-02-10T07:40:55+00:00] INFO: template[/etc/bash.bashrc.local] owner changed to 0
+[2021-02-10T07:40:55+00:00] INFO: template[/etc/bash.bashrc.local] group changed to 0
+[2021-02-10T07:40:55+00:00] INFO: template[/etc/bash.bashrc.local] mode changed to 644
+[2021-02-10T07:40:55+00:00] INFO: Processing execute[systemctl-daemon-reload] action nothing (resolver::pdnsd line 11)
+[2021-02-10T07:40:55+00:00] INFO: Processing zypper_package[pdnsd] action install (resolver::pdnsd line 17)
+[2021-02-10T07:40:59+00:00] INFO: zypper_package[pdnsd] installed pdnsd at 1.2.9-9.1.SAP
+[2021-02-10T07:40:59+00:00] INFO: zypper_package[pdnsd] sending run action to execute[systemctl-daemon-reload] (immediate)
+[2021-02-10T07:40:59+00:00] INFO: Processing execute[systemctl-daemon-reload] action run (sap::clearlogs line 16)
+[2021-02-10T07:40:59+00:00] INFO: execute[systemctl-daemon-reload] ran successfully
+[2021-02-10T07:40:59+00:00] INFO: Processing service[pdnsd] action enable (resolver::pdnsd line 22)
+[2021-02-10T07:41:00+00:00] INFO: service[pdnsd] enabled
+[2021-02-10T07:41:00+00:00] INFO: Processing template[/etc/sysconfig/pdnsd] action create (resolver::pdnsd line 26)
+[2021-02-10T07:41:00+00:00] INFO: template[/etc/sysconfig/pdnsd] backed up to /var/backups/chef/etc/sysconfig/pdnsd.chef-20210210074100.458465
+[2021-02-10T07:41:00+00:00] INFO: template[/etc/sysconfig/pdnsd] updated file contents /etc/sysconfig/pdnsd
+[2021-02-10T07:41:00+00:00] INFO: template[/etc/sysconfig/pdnsd] sending run action to execute[systemctl-daemon-reload] (immediate)
+[2021-02-10T07:41:00+00:00] INFO: Processing execute[systemctl-daemon-reload] action run (sap::clearlogs line 16)
+[2021-02-10T07:41:00+00:00] INFO: execute[systemctl-daemon-reload] ran successfully
+[2021-02-10T07:41:00+00:00] INFO: Processing zypper_package[oasis-ng] action install (sap::infratools line 10)
+[2021-02-10T07:41:02+00:00] INFO: Processing zypper_package[perl-oasis-module-scanner] action install (sap::infratools line 10)
+[2021-02-10T07:41:03+00:00] INFO: Processing zypper_package[perl-oasis-module-server] action install (sap::infratools line 10)
+[2021-02-10T07:41:05+00:00] INFO: Processing zypper_package[perl-oasis-module-xen] action install (sap::infratools line 10)
+[2021-02-10T07:41:11+00:00] INFO: zypper_package[perl-oasis-module-xen] installed perl-oasis-module-xen at 6.4.20-1.1.SAP
+[2021-02-10T07:41:11+00:00] INFO: Processing zypper_package[perl-os-library] action install (sap::infratools line 10)
+[2021-02-10T07:41:12+00:00] INFO: Processing zypper_package[perl-Switch] action install (sap::infratools line 10)
+[2021-02-10T07:41:14+00:00] INFO: Processing zypper_package[perl-LWP-Protocol-https] action install (sap::infratools line 10)
+[2021-02-10T07:41:16+00:00] INFO: Processing zypper_package[byd-register] action install (sap::register line 7)
+[2021-02-10T07:41:17+00:00] INFO: Processing service[sap-register] action start (sap::register line 11)
+[2021-02-10T07:41:17+00:00] INFO: Processing service[sap-register] action enable (sap::register line 11)
+[2021-02-10T07:41:17+00:00] INFO: Processing file[/etc/cron.d/sap-clearlogs-sudo] action delete (sap::clearlogs line 11)
+[2021-02-10T07:41:17+00:00] INFO: Processing file[/etc/cron.d/sap-clearlogs-audit] action delete (sap::clearlogs line 11)
+[2021-02-10T07:41:17+00:00] INFO: Processing execute[systemctl-daemon-reload] action nothing (sap::clearlogs line 16)
+[2021-02-10T07:41:17+00:00] INFO: Processing zypper_package[byd-clearlogs] action install (sap::clearlogs line 21)
+[2021-02-10T07:41:21+00:00] INFO: zypper_package[byd-clearlogs] installed byd-clearlogs at 1.0.5119-1.1.SAP
+[2021-02-10T07:41:21+00:00] INFO: Processing file[/root/.ssh/clearlogs_id_dsa] action create (sap::clearlogs line 26)
+[2021-02-10T07:41:21+00:00] INFO: Processing template[/etc/systemd/system/sap-clearlogs-sudo.timer] action create (sap::clearlogs line 34)
+[2021-02-10T07:41:21+00:00] INFO: template[/etc/systemd/system/sap-clearlogs-sudo.timer] created file /etc/systemd/system/sap-clearlogs-sudo.timer
+[2021-02-10T07:41:21+00:00] INFO: template[/etc/systemd/system/sap-clearlogs-sudo.timer] updated file contents /etc/systemd/system/sap-clearlogs-sudo.timer
+[2021-02-10T07:41:21+00:00] INFO: template[/etc/systemd/system/sap-clearlogs-sudo.timer] owner changed to 0
+[2021-02-10T07:41:21+00:00] INFO: template[/etc/systemd/system/sap-clearlogs-sudo.timer] group changed to 0
+[2021-02-10T07:41:21+00:00] INFO: template[/etc/systemd/system/sap-clearlogs-sudo.timer] mode changed to 644
+[2021-02-10T07:41:21+00:00] INFO: template[/etc/systemd/system/sap-clearlogs-sudo.timer] sending run action to execute[systemctl-daemon-reload] (immediate)
+[2021-02-10T07:41:21+00:00] INFO: Processing execute[systemctl-daemon-reload] action run (sap::clearlogs line 16)
+[2021-02-10T07:41:22+00:00] INFO: execute[systemctl-daemon-reload] ran successfully
+[2021-02-10T07:41:22+00:00] INFO: Processing template[/etc/systemd/system/sap-clearlogs-sudo.service] action create (sap::clearlogs line 43)
+[2021-02-10T07:41:22+00:00] INFO: template[/etc/systemd/system/sap-clearlogs-sudo.service] created file /etc/systemd/system/sap-clearlogs-sudo.service
+[2021-02-10T07:41:22+00:00] INFO: template[/etc/systemd/system/sap-clearlogs-sudo.service] updated file contents /etc/systemd/system/sap-clearlogs-sudo.service
+[2021-02-10T07:41:22+00:00] INFO: template[/etc/systemd/system/sap-clearlogs-sudo.service] owner changed to 0
+[2021-02-10T07:41:22+00:00] INFO: template[/etc/systemd/system/sap-clearlogs-sudo.service] group changed to 0
+[2021-02-10T07:41:22+00:00] INFO: template[/etc/systemd/system/sap-clearlogs-sudo.service] mode changed to 644
+[2021-02-10T07:41:22+00:00] INFO: template[/etc/systemd/system/sap-clearlogs-sudo.service] sending run action to execute[systemctl-daemon-reload] (immediate)
+[2021-02-10T07:41:22+00:00] INFO: Processing execute[systemctl-daemon-reload] action run (sap::clearlogs line 16)
+[2021-02-10T07:41:22+00:00] INFO: execute[systemctl-daemon-reload] ran successfully
+[2021-02-10T07:41:22+00:00] INFO: Processing service[sap-clearlogs-sudo.timer] action enable (sap::clearlogs line 52)
+[2021-02-10T07:41:22+00:00] INFO: service[sap-clearlogs-sudo.timer] enabled
+[2021-02-10T07:41:22+00:00] INFO: Processing service[sap-clearlogs-sudo.timer] action start (sap::clearlogs line 52)
+[2021-02-10T07:41:23+00:00] INFO: service[sap-clearlogs-sudo.timer] started
+[2021-02-10T07:41:23+00:00] INFO: Processing template[/etc/systemd/system/sap-clearlogs-audit.timer] action create (sap::clearlogs line 58)
+[2021-02-10T07:41:23+00:00] INFO: template[/etc/systemd/system/sap-clearlogs-audit.timer] created file /etc/systemd/system/sap-clearlogs-audit.timer
+[2021-02-10T07:41:23+00:00] INFO: template[/etc/systemd/system/sap-clearlogs-audit.timer] updated file contents /etc/systemd/system/sap-clearlogs-audit.timer
+[2021-02-10T07:41:23+00:00] INFO: template[/etc/systemd/system/sap-clearlogs-audit.timer] owner changed to 0
+[2021-02-10T07:41:23+00:00] INFO: template[/etc/systemd/system/sap-clearlogs-audit.timer] group changed to 0
+[2021-02-10T07:41:23+00:00] INFO: template[/etc/systemd/system/sap-clearlogs-audit.timer] mode changed to 644
+[2021-02-10T07:41:23+00:00] INFO: template[/etc/systemd/system/sap-clearlogs-audit.timer] sending run action to execute[systemctl-daemon-reload] (immediate)
+[2021-02-10T07:41:23+00:00] INFO: Processing execute[systemctl-daemon-reload] action run (sap::clearlogs line 16)
+[2021-02-10T07:41:23+00:00] INFO: execute[systemctl-daemon-reload] ran successfully
+[2021-02-10T07:41:23+00:00] INFO: Processing template[/etc/systemd/system/sap-clearlogs-audit.service] action create (sap::clearlogs line 67)
+[2021-02-10T07:41:23+00:00] INFO: template[/etc/systemd/system/sap-clearlogs-audit.service] created file /etc/systemd/system/sap-clearlogs-audit.service
+[2021-02-10T07:41:23+00:00] INFO: template[/etc/systemd/system/sap-clearlogs-audit.service] updated file contents /etc/systemd/system/sap-clearlogs-audit.service
+[2021-02-10T07:41:23+00:00] INFO: template[/etc/systemd/system/sap-clearlogs-audit.service] owner changed to 0
+[2021-02-10T07:41:23+00:00] INFO: template[/etc/systemd/system/sap-clearlogs-audit.service] group changed to 0
+[2021-02-10T07:41:23+00:00] INFO: template[/etc/systemd/system/sap-clearlogs-audit.service] mode changed to 644
+[2021-02-10T07:41:23+00:00] INFO: template[/etc/systemd/system/sap-clearlogs-audit.service] sending run action to execute[systemctl-daemon-reload] (immediate)
+[2021-02-10T07:41:23+00:00] INFO: Processing execute[systemctl-daemon-reload] action run (sap::clearlogs line 16)
+[2021-02-10T07:41:23+00:00] INFO: execute[systemctl-daemon-reload] ran successfully
+[2021-02-10T07:41:23+00:00] INFO: Processing service[sap-clearlogs-audit.timer] action enable (sap::clearlogs line 76)
+[2021-02-10T07:41:24+00:00] INFO: service[sap-clearlogs-audit.timer] enabled
+[2021-02-10T07:41:24+00:00] INFO: Processing service[sap-clearlogs-audit.timer] action start (sap::clearlogs line 76)
+[2021-02-10T07:41:24+00:00] INFO: service[sap-clearlogs-audit.timer] started
+[2021-02-10T07:41:24+00:00] INFO: Processing template[/etc/rsyslog.d/01_sapetd.rsyslog.conf] action create (s4h_server::cdrc line 10)
+[2021-02-10T07:41:24+00:00] INFO: template[/etc/rsyslog.d/01_sapetd.rsyslog.conf] created file /etc/rsyslog.d/01_sapetd.rsyslog.conf
+[2021-02-10T07:41:24+00:00] INFO: template[/etc/rsyslog.d/01_sapetd.rsyslog.conf] updated file contents /etc/rsyslog.d/01_sapetd.rsyslog.conf
+[2021-02-10T07:41:24+00:00] INFO: template[/etc/rsyslog.d/01_sapetd.rsyslog.conf] owner changed to 0
+[2021-02-10T07:41:24+00:00] INFO: template[/etc/rsyslog.d/01_sapetd.rsyslog.conf] group changed to 0
+[2021-02-10T07:41:24+00:00] INFO: template[/etc/rsyslog.d/01_sapetd.rsyslog.conf] mode changed to 600
+[2021-02-10T07:41:24+00:00] INFO: template[/etc/rsyslog.d/01_sapetd.rsyslog.conf] not queuing delayed action restart on service[rsyslog] (delayed), as it's already been queued
+[2021-02-10T07:41:24+00:00] INFO: Processing script[Preserve FQDN ] action run (s4h_server::cdrc line 18)
+[2021-02-10T07:41:24+00:00] INFO: script[Preserve FQDN ] ran successfully
+[2021-02-10T07:41:24+00:00] INFO: Processing service[rsyslog] action enable (s4h_server::cdrc line 30)
+[2021-02-10T07:41:24+00:00] INFO: Processing service[rsyslog] action nothing (s4h_server::cdrc line 30)
+[2021-02-10T07:41:24+00:00] INFO: Processing zypper_package[open-iscsi] action install (s4h_server::packages line 51)
+[2021-02-10T07:42:10+00:00] INFO: zypper_package[open-iscsi] installed open-iscsi at 2.0.876-13.37.1
+[2021-02-10T07:42:10+00:00] INFO: Processing zypper_package[xfsprogs] action install (s4h_server::packages line 55)
+[2021-02-10T07:42:12+00:00] INFO: Processing zypper_package[tcsh] action install (s4h_server::packages line 61)
+[2021-02-10T07:42:13+00:00] INFO: Processing zypper_package[unzip] action install (s4h_server::packages line 65)
+[2021-02-10T07:42:15+00:00] INFO: Processing script[Changes in idmapd conf] action run (s4h_server::packages line 70)
+[2021-02-10T07:42:15+00:00] INFO: script[Changes in idmapd conf] ran successfully
+[2021-02-10T07:42:15+00:00] INFO: Processing script[Node Exporter for Prometheus in Ali cloud GCP and Azure servers] action run (s4h_server::packages line 84)
+[2021-02-10T07:43:38+00:00] INFO: script[Node Exporter for Prometheus in Ali cloud GCP and Azure servers] ran successfully
+[2021-02-10T07:43:38+00:00] INFO: Processing script[Change of Kernel Parameter] action run (cc_s4h_server::db_hardening_s4h line 10)
+[2021-02-10T07:43:38+00:00] INFO: script[Change of Kernel Parameter] ran successfully
+[2021-02-10T07:43:38+00:00] INFO: Processing script[To enable dentries kernel parameter for SLES 15 servers] action run (cc_s4h_server::db_hardening_s4h line 140)
+[2021-02-10T07:43:38+00:00] INFO: script[To enable dentries kernel parameter for SLES 15 servers] ran successfully
+[2021-02-10T07:43:39+00:00] INFO: Processing script[To set swappiness value] action run (cc_s4h_server::db_hardening_s4h line 172)
+[2021-02-10T07:43:39+00:00] INFO: script[To set swappiness value] ran successfully
+[2021-02-10T07:43:39+00:00] INFO: Processing linux_user[splunk] action remove (cc_s4h_server::remove_packages line 10)
+[2021-02-10T07:43:39+00:00] INFO: Processing zypper_package[splunkforwarder] action remove (cc_s4h_server::remove_packages line 16)
+[2021-02-10T07:43:40+00:00] INFO: Processing group[splunk] action remove (cc_s4h_server::remove_packages line 21)
+[2021-02-10T07:43:40+00:00] INFO: Processing zypper_package[cloud-init-config] action remove (cc_s4h_server::remove_packages line 28)
+[2021-02-10T07:43:40+00:00] INFO: Processing zypper_package[cloud-init] action remove (cc_s4h_server::remove_packages line 28)
+[2021-02-10T07:43:40+00:00] INFO: Processing script[NSCD Removal] action run (cc_s4h_server::remove_packages line 34)
+[2021-02-10T07:43:40+00:00] INFO: script[NSCD Removal] ran successfully
+[2021-02-10T07:43:40+00:00] INFO: Processing script[Removal of  packages for SLES15] action run (cc_s4h_server::remove_packages line 45)
+[2021-02-10T07:43:43+00:00] INFO: script[Removal of  packages for SLES15] ran successfully
+[2021-02-10T07:43:43+00:00] INFO: Processing template[/etc/rsyslog.d/HDB.conf] action create (cc_s4h_server::rsyslog_sp3 line 11)
+[2021-02-10T07:43:43+00:00] INFO: template[/etc/rsyslog.d/HDB.conf] created file /etc/rsyslog.d/HDB.conf
+[2021-02-10T07:43:43+00:00] INFO: template[/etc/rsyslog.d/HDB.conf] updated file contents /etc/rsyslog.d/HDB.conf
+[2021-02-10T07:43:43+00:00] INFO: template[/etc/rsyslog.d/HDB.conf] owner changed to 0
+[2021-02-10T07:43:43+00:00] INFO: template[/etc/rsyslog.d/HDB.conf] group changed to 0
+[2021-02-10T07:43:43+00:00] INFO: template[/etc/rsyslog.d/HDB.conf] mode changed to 600
+[2021-02-10T07:43:43+00:00] INFO: template[/etc/rsyslog.d/HDB.conf] not queuing delayed action restart on service[rsyslog] (delayed), as it's already been queued
+[2021-02-10T07:43:43+00:00] INFO: Processing zypper_package[perl-SOAP-Lite] action install (sap::saphostagent line 11)
+[2021-02-10T07:43:47+00:00] INFO: zypper_package[perl-SOAP-Lite] installed perl-SOAP-Lite at 1.27-1.20
+[2021-02-10T07:43:47+00:00] INFO: Processing zypper_repository[remove_devel_languages_perl] action remove (sap::saphostagent line 15)
+[2021-02-10T07:43:47+00:00] INFO: Processing execute[zypper --quiet --non-interactive removerepo devel_languages_perl] action run (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 55)
+[2021-02-10T07:43:47+00:00] INFO: Processing execute[Guard resource] action run (dynamically defined)
+[2021-02-10T07:43:47+00:00] INFO: Processing zypper_package[perl-TimeDate] action install (sap::saphostagent line 21)
+[2021-02-10T07:43:51+00:00] INFO: zypper_package[perl-TimeDate] installed perl-TimeDate at 2.30-3.9.1
+[2021-02-10T07:43:51+00:00] INFO: Processing script[install sap hostagent] action run (sap::saphostagent line 25)
+[2021-02-10T07:44:23+00:00] INFO: script[install sap hostagent] ran successfully
+[2021-02-10T07:44:23+00:00] INFO: Processing zypper_package[lvm2] action install (lvm::default line 20)
+[2021-02-10T07:44:24+00:00] INFO: Processing lvm_logical_volume[bmc] action create (sap::bladelogic line 9)
+[2021-02-10T07:44:24+00:00] INFO: Processing lvm_logical_volume[bmc] action resize (sap::bladelogic line 20)
+[2021-02-10T07:44:24+00:00] INFO: Processing script[install bladelogic] action run (sap::bladelogic line 41)
+[2021-02-10T07:46:03+00:00] INFO: script[install bladelogic] ran successfully
+[2021-02-10T07:46:03+00:00] INFO: script[install bladelogic] sending run action to execute[systemctl daemon-reload] (immediate)
+[2021-02-10T07:46:03+00:00] INFO: Processing execute[systemctl daemon-reload] action run (sap::bladelogic line 66)
+[2021-02-10T07:46:03+00:00] INFO: execute[systemctl daemon-reload] ran successfully
+[2021-02-10T07:46:03+00:00] INFO: Processing script[rm tmp files] action nothing (sap::bladelogic line 56)
+[2021-02-10T07:46:03+00:00] INFO: Processing execute[systemctl daemon-reload] action nothing (sap::bladelogic line 66)
+[2021-02-10T07:46:03+00:00] INFO: Processing service[rscd] action enable (sap::bladelogic line 71)
+[2021-02-10T07:46:04+00:00] INFO: Processing service[rscd] action start (sap::bladelogic line 71)
+[2021-02-10T07:46:04+00:00] INFO: Processing zypper_repository[refresh] action refresh (public_cloud::actifio line 11)
+[2021-02-10T07:46:04+00:00] INFO: Processing execute[zypper --quiet --non-interactive refresh --force refresh] action run (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.8.12/lib/chef/provider/zypper_repository.rb line 61)
+[2021-02-10T07:46:04+00:00] INFO: Processing execute[Guard resource] action run (dynamically defined)
+[2021-02-10T07:46:04+00:00] INFO: Processing zypper_package[jq] action install (public_cloud::actifio line 15)
+[2021-02-10T07:46:11+00:00] INFO: Processing bash[actifio install] action run (public_cloud::actifio line 19)
+[2021-02-10T07:46:25+00:00] INFO: bash[actifio install] ran successfully
+[2021-02-10T07:46:25+00:00] INFO: Processing bash[RPM_install] action run (s4h_server::hyp_cust_rpm line 10)
+[2021-02-10T07:46:26+00:00] INFO: bash[RPM_install] ran successfully
+[2021-02-10T07:46:26+00:00] INFO: Processing bash[1.20.02 sha512 algorithm configuration] action run (cc_s4h_server::oshardening line 10)
+[2021-02-10T07:46:26+00:00] INFO: bash[1.20.02 sha512 algorithm configuration] ran successfully
+[2021-02-10T07:46:26+00:00] INFO: Processing script[1.20.03 Check secure password policy] action run (cc_s4h_server::oshardening line 21)
+[2021-02-10T07:46:27+00:00] INFO: script[1.20.03 Check secure password policy] ran successfully
+[2021-02-10T07:46:27+00:00] INFO: Processing script[For webadm sapadm locking issue] action run (cc_s4h_server::oshardening line 66)
+[2021-02-10T07:46:27+00:00] INFO: script[For webadm sapadm locking issue] ran successfully
+[2021-02-10T07:46:27+00:00] INFO: Processing script[1.20.05 Implement password aging] action run (cc_s4h_server::oshardening line 76)
+[2021-02-10T07:46:27+00:00] INFO: script[1.20.05 Implement password aging] ran successfully
+[2021-02-10T07:46:27+00:00] INFO: Processing script[1.30.01 remove rlogin, rsh, rcp, and telnet] action run (cc_s4h_server::oshardening line 108)
+[2021-02-10T07:46:28+00:00] INFO: script[1.30.01 remove rlogin, rsh, rcp, and telnet] ran successfully
+[2021-02-10T07:46:28+00:00] INFO: Processing script[Vulnerability] action run (cc_s4h_server::oshardening line 123)
+[2021-02-10T07:46:28+00:00] INFO: script[Vulnerability] ran successfully
+[2021-02-10T07:46:28+00:00] INFO: Processing script[1.30.02 secure ssh configuration - other settings] action run (cc_s4h_server::oshardening line 137)
+[2021-02-10T07:46:28+00:00] INFO: script[1.30.02 secure ssh configuration - other settings] ran successfully
+[2021-02-10T07:46:28+00:00] INFO: Processing script[2.20.06 Session timeout] action run (cc_s4h_server::oshardening line 180)
+[2021-02-10T07:46:28+00:00] INFO: script[2.20.06 Session timeout] ran successfully
+[2021-02-10T07:46:28+00:00] INFO: Processing script[2.20.09 Enforce strict permissions for root] action run (cc_s4h_server::oshardening line 213)
+[2021-02-10T07:46:28+00:00] INFO: script[2.20.09 Enforce strict permissions for root] ran successfully
+[2021-02-10T07:46:28+00:00] INFO: Processing script[2.20.11 Implement cronjob hardening] action run (cc_s4h_server::oshardening line 220)
+[2021-02-10T07:46:28+00:00] INFO: script[2.20.11 Implement cronjob hardening] ran successfully
+[2021-02-10T07:46:28+00:00] INFO: Processing script[2.20.12  memory protection mechanism] action run (cc_s4h_server::oshardening line 230)
+[2021-02-10T07:46:28+00:00] INFO: script[2.20.12  memory protection mechanism] ran successfully
+[2021-02-10T07:46:28+00:00] INFO: Processing script[2.50.01 Set home directory permissions] action run (cc_s4h_server::oshardening line 244)
+[2021-02-10T07:46:28+00:00] INFO: script[2.50.01 Set home directory permissions] ran successfully
+[2021-02-10T07:46:28+00:00] INFO: Processing script[2.50.06 strict global umask value] action run (cc_s4h_server::oshardening line 252)
+[2021-02-10T07:46:28+00:00] INFO: script[2.50.06 strict global umask value] ran successfully
+[2021-02-10T07:46:28+00:00] INFO: Processing script[OS Hardening 2.90.01 Audit log files on a regular basis] action run (cc_s4h_server::oshardening line 260)
+[2021-02-10T07:46:28+00:00] INFO: script[OS Hardening 2.90.01 Audit log files on a regular basis] ran successfully
+[2021-02-10T07:46:28+00:00] INFO: Processing script[OS Hardening 2.20.13 secure creation of soft and hardlinks 2.70.02 Network Parameter Tuning 2.90.03 Disable access to dmesg ] action run (cc_s4h_server::oshardening line 291)
+[2021-02-10T07:46:28+00:00] INFO: script[OS Hardening 2.20.13 secure creation of soft and hardlinks 2.70.02 Network Parameter Tuning 2.90.03 Disable access to dmesg ] ran successfully
+[2021-02-10T07:46:28+00:00] INFO: Processing script[service restart ] action run (cc_s4h_server::oshardening line 333)
+[2021-02-10T07:46:28+00:00] INFO: script[service restart ] ran successfully
+[2021-02-10T07:46:28+00:00] INFO: Processing script[2.20.07 Review SUID/GUID files] action run (cc_s4h_server::oshardening line 341)
+[2021-02-10T07:46:29+00:00] INFO: script[2.20.07 Review SUID/GUID files] ran successfully
+[2021-02-10T07:46:29+00:00] INFO: Processing template[/root/sayhello.pl] action create (s4h_server::sayhello line 10)
+[2021-02-10T07:46:29+00:00] INFO: template[/root/sayhello.pl] backed up to /var/backups/chef/root/sayhello.pl.chef-20210210074629.011867
+[2021-02-10T07:46:29+00:00] INFO: template[/root/sayhello.pl] updated file contents /root/sayhello.pl
+[2021-02-10T07:46:29+00:00] INFO: template[/root/sayhello.pl] mode changed to 644
+[2021-02-10T07:46:29+00:00] INFO: template[/etc/chrony.conf] sending restart action to service[chronyd] (delayed)
+[2021-02-10T07:46:29+00:00] INFO: Processing service[chronyd] action restart (cc_s4h_server::chrony line 41)
+[2021-02-10T07:46:29+00:00] INFO: service[chronyd] restarted
+[2021-02-10T07:46:29+00:00] INFO: template[/etc/sssd/sssd.conf] sending restart action to service[sssd] (delayed)
+[2021-02-10T07:46:29+00:00] INFO: Processing service[sssd] action restart (auth::sssd line 79)
+[2021-02-10T07:46:29+00:00] INFO: service[sssd] restarted
+[2021-02-10T07:46:29+00:00] INFO: template[/etc/ssh/sshd_config] sending restart action to service[sshd] (delayed)
+[2021-02-10T07:46:29+00:00] INFO: Processing service[sshd] action restart (auth::sshd line 37)
+[2021-02-10T07:46:29+00:00] INFO: service[sshd] restarted
+[2021-02-10T07:46:29+00:00] INFO: template[/etc/rsyslog.conf] sending restart action to service[rsyslog] (delayed)
+[2021-02-10T07:46:29+00:00] INFO: Processing service[rsyslog] action restart (s4h_server::cdrc line 30)
+[2021-02-10T07:46:29+00:00] INFO: service[rsyslog] restarted
+[2021-02-10T07:46:29+00:00] INFO: template[/etc/sysconfig/postfix] sending restart action to service[postfix] (delayed)
+[2021-02-10T07:46:29+00:00] INFO: Processing service[postfix] action restart (mta::smtp_auth line 73)
+[2021-02-10T07:46:30+00:00] INFO: service[postfix] restarted
+[2021-02-10T07:46:30+00:00] INFO: template[/etc/sysconfig/pdnsd] sending restart action to service[pdnsd] (delayed)
+[2021-02-10T07:46:30+00:00] INFO: Processing service[pdnsd] action restart (resolver::pdnsd line 22)
+[2021-02-10T07:46:30+00:00] INFO: service[pdnsd] restarted
+[2021-02-10T07:46:30+00:00] INFO: script[install bladelogic] sending run action to script[rm tmp files] (delayed)
+[2021-02-10T07:46:30+00:00] INFO: Processing script[rm tmp files] action run (sap::bladelogic line 56)
+[2021-02-10T07:46:30+00:00] INFO: script[rm tmp files] ran successfully
+[2021-02-10T07:46:30+00:00] INFO: Chef Run complete in 868.929562444 seconds
+[2021-02-10T07:46:30+00:00] INFO: Running report handlers
+[2021-02-10T07:46:30+00:00] INFO: Report handlers complete
+[2021-02-10T08:00:13+00:00] INFO: *** Chef 14.8.12 ***
+[2021-02-10T08:00:13+00:00] INFO: Platform: x86_64-linux
+[2021-02-10T08:00:13+00:00] INFO: Chef-client pid: 2035
+[2021-02-10T08:00:13+00:00] INFO: The plugin path /etc/chef/ohai/plugins does not exist. Skipping...
+[2021-02-10T08:00:16+00:00] INFO: Setting the run_list to ["role[lan_azr0201_sfh]", "role[_s4h-vm-init_customer]"] from CLI options
+[2021-02-10T08:00:16+00:00] WARN: Run List override has been provided.
+[2021-02-10T08:00:16+00:00] WARN: Original Run List: [role[lan_azr0201_sfh], role[_s4h-vm-init_customer]]
+[2021-02-10T08:00:16+00:00] WARN: Overridden Run List: [recipe[swap]]
+[2021-02-10T08:00:16+00:00] INFO: Run List is [recipe[swap]]
+[2021-02-10T08:00:16+00:00] INFO: Run List expands to [swap]
+[2021-02-10T08:00:16+00:00] INFO: Starting Chef Run for azr02v002968
+[2021-02-10T08:00:16+00:00] INFO: Running start handlers
+[2021-02-10T08:00:16+00:00] INFO: Start handlers complete.
+[2021-02-10T08:00:16+00:00] INFO: Error while reporting run start to Data Collector. URL: https://10.238.210.132:443/organizations/s4h/data-collector Exception: 404 -- 404 "Not Found"  (This is normal if you do not have Chef Automate)
+[2021-02-10T08:00:16+00:00] INFO: Loading cookbooks [storage-helpers@0.1.3, swap@0.1.7]
+[2021-02-10T08:00:16+00:00] INFO: Skipping removal of obsoleted cookbooks from the cache
+[2021-02-10T08:00:16+00:00] INFO: Processing bash[format_disk_swap_device] action run (swap::swap line 11)
+[2021-02-10T08:00:16+00:00] INFO: Try to find unused BlockDevice of Size at least 32GB
+[2021-02-10T08:00:16+00:00] INFO: Device /dev/sda has partitions and is obviously used, skip!
+[2021-02-10T08:00:16+00:00] INFO: Device /dev/sdb found!
+[2021-02-10T08:00:16+00:00] INFO: No matching device for FS with label swap!
+[2021-02-10T08:00:16+00:00] INFO: Try to find unused BlockDevice of Size at least 32GB
+[2021-02-10T08:00:16+00:00] INFO: Device /dev/sda has partitions and is obviously used, skip!
+[2021-02-10T08:00:16+00:00] INFO: Device /dev/sdb found!
+[2021-02-10T08:00:16+00:00] INFO: bash[format_disk_swap_device] ran successfully
+[2021-02-10T08:00:16+00:00] INFO: Try to find unused BlockDevice of Size at least 32GB
+[2021-02-10T08:00:16+00:00] INFO: Device /dev/sda has partitions and is obviously used, skip!
+[2021-02-10T08:00:16+00:00] INFO: Device /dev/sdb found!
+[2021-02-10T08:00:16+00:00] INFO: Processing mount[mount_swap_disk_device] action enable (swap::swap line 18)
+[2021-02-10T08:00:16+00:00] INFO: No UUID for FS with label swap found!
+[2021-02-10T08:00:16+00:00] INFO: Found UUID 86b31158-8a20-48ed-85cc-7b45892635f2 for FS with label swap!
+[2021-02-10T08:00:16+00:00] INFO: Found UUID 86b31158-8a20-48ed-85cc-7b45892635f2 for FS with label swap!
+[2021-02-10T08:00:16+00:00] INFO: Processing service[systemd-udev-trigger.service] action restart (swap::swap line 28)
+[2021-02-10T08:00:17+00:00] INFO: service[systemd-udev-trigger.service] restarted
+[2021-02-10T08:00:17+00:00] INFO: Processing script[activate swap] action run (swap::swap line 33)
+[2021-02-10T08:00:17+00:00] INFO: script[activate swap] ran successfully
+[2021-02-10T08:00:17+00:00] WARN: Skipping final node save because override_runlist was given
+[2021-02-10T08:00:17+00:00] INFO: Chef Run complete in 0.785077932 seconds
+[2021-02-10T08:00:17+00:00] INFO: Skipping removal of unused files from the cache
+[2021-02-10T08:00:17+00:00] INFO: Running report handlers
+[2021-02-10T08:00:17+00:00] INFO: Report handlers complete
